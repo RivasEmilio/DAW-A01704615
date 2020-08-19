@@ -21,6 +21,10 @@ function tabla(){
 
     table = table.concat("</table>");
     document.getElementById("p1").innerHTML = table; 
-    alert(numero);
+}
+
+function dosNumeros(){
+    
+
 
 }
