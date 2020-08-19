@@ -24,7 +24,36 @@ function tabla(){
 }
 
 function dosNumeros(){
-    
 
+    const num1 = Math.floor(Math.random() * 100); 
 
+    const num2 = Math.floor(Math.random() * 100);
+
+    let resultado = num1+num2;
+
+    let startTime = new Date();
+
+    let entrada;
+
+    while (isNaN(entrada)) {
+        entrada = prompt("Ingresa caul es el resultado de: " + num1 +" + " + num2,"0");
+
+        if(entrada == resultado){
+            alert("Es correcto!");
+            continue;
+        }
+        else{
+            alert("ese no es el resultado correcto");
+        }
+    }
+
+    let final = (new Date()-startTime)/1000;
+    alert("Te tardaste: " + final +" segundos en responder");
 }
+
+function contador(){
+
+    
+}
+
+
