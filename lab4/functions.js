@@ -53,7 +53,34 @@ function dosNumeros(){
 
 function contador(){
 
+    const numAr = [];
+
+    let negative=0, positive=0, zero=0;
+
+    for (let index = 0; index < 20; index++) {
+
+        const num1 = Math.floor(Math.random() * 100); 
+
+        const num2 = Math.floor(Math.random() * 100);
+
+        numAr[index]= num1-num2;
+ 
+        if(numAr[index]>0){
+            negative++;
+        }
+
+        if(numAr[index]==0){
+            zero++;
+        }
+
+        if(numAr[index]<0){
+            positive++;
+        }   
+    }
+
+    alert("Los numeros son: " + numAr +"\n\nHay "+negative+" numero negativos, "+positive+" numeros positivos y "+zero+" numeros son iguales a cero");
     
 }
+
 
 
