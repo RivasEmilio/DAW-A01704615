@@ -82,5 +82,58 @@ function contador(){
     
 }
 
+function promedios(){
+
+    const matrix = [];
+    const length = 4;
+
+    for (let i = 0; i < length; i++) {
+
+        matrix[i] = new Array(length);
+
+        for(let j = 0; j<length; j++){
+
+            matrix[i][j]= Math.floor(Math.random() * 11);
+        }
+    }
+
+    let table = "";
+
+    table = table.concat("<table>");
+
+    let promedio=0, proFin =0;
+
+    for (let i = 0; i < length; i++) {
+        table = table.concat("<tr>");
+        for (let j = 0; j <length; j++) {
+            promedio += matrix[i][j];
+            table = table.concat("<td>"+matrix[i][j]+"<td>");
+        }
+
+        table = table.concat("<td>"+(promedio/length)+"<td>");
+        table = table.concat("<tr>");
+        proFin += promedio/length;
+    }
+
+    alert("el promedio de la tabla es "+proFin);
+
+   document.getElementById("p4").innerHTML =table;
+
+}
+
+function inversion(){
+
+    var numero = prompt("Ingresa un numero!","0");
+
+    while(isNaN(numero)){
+        numero = prompt("Asegurate que ingresaste un numero");
+    }
+
+    numero = numero + "";
+
+    alert("Tu numero invertido es "+numero.split("").reverse("").join(""));
+
+
+}
 
 
