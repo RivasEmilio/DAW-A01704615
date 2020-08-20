@@ -115,9 +115,9 @@ function promedios(){
         proFin += promedio/length;
     }
 
-    alert("el promedio de la tabla es "+proFin);
-
    document.getElementById("p4").innerHTML =table;
+
+   alert("el promedio de la tabla es "+proFin);
 
 }
 
@@ -133,7 +133,49 @@ function inversion(){
 
     alert("Tu numero invertido es "+numero.split("").reverse("").join(""));
 
+}
 
+function porqueMeHacesEstoRicardo(){
+
+    let BMI = 0;
+    var numero = prompt("Ingresa tu estatura en centimetros!","0");
+
+    while(isNaN(numero)){
+        numero = prompt("Asegurate que ingresaste un numero");
+    }
+
+    var numero2 = prompt("Ingresa tu peso en kilos!","0");
+
+    while(isNaN(numero2)){
+        numero2 = prompt("Asegurate que ingresaste un numero");
+    }
+
+    numero = numero/100;
+    var persona ={
+        peso: numero2,
+        estatura: numero
+    };
+
+    BMI = ((persona.peso)/(persona.estatura**2));
+
+    console.log(persona);
+    console.log(BMI);
+
+    if(BMI>18.5 && BMI<25){
+        alert("Tu peso es normal!");
+    }
+
+    if(BMI>25 && BMI<30){
+        alert("Tienes sobrepeso");
+    }
+
+    if(BMI>30 && BMI<40){
+        alert("Eres OBESO");
+    }
+
+    if(BMI>40){
+        alert("Eres MORBIDAMENTE OBESO");
+    }
 }
 
 
