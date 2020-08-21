@@ -101,9 +101,10 @@ function promedios(){
 
     table = table.concat("<table>");
 
-    let promedio=0, proFin =0;
+    let promedio, proFin =0;
 
     for (let i = 0; i < length; i++) {
+        promedio=0;
         table = table.concat("<tr>");
         for (let j = 0; j <length; j++) {
             promedio += matrix[i][j];
@@ -161,20 +162,23 @@ function porqueMeHacesEstoRicardo(){
     console.log(persona);
     console.log(BMI);
 
+    if (BMI<18.5) {
+        alert("Estas bajo de peso con un BMI de: "+BMI);
+    }
     if(BMI>18.5 && BMI<25){
-        alert("Tu peso es normal!");
+        alert("Tu peso es normal! con un BMI de: "+BMI);
     }
 
     if(BMI>25 && BMI<30){
-        alert("Tienes sobrepeso");
+        alert("Tienes sobrepeso con un BMI de: "+BMI);
     }
 
     if(BMI>30 && BMI<40){
-        alert("Eres OBESO");
+        alert("Eres OBESO con un BMI de: "+BMI);
     }
 
     if(BMI>40){
-        alert("Eres MORBIDAMENTE OBESO");
+        alert("Eres MORBIDAMENTE OBESO con un BMI de: "+BMI);
     }
 }
 
