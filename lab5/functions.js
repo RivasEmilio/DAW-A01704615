@@ -9,3 +9,63 @@ function test_str() {
         alert("contraseña incorrecta");
 
 } 
+let total=0, v1=0, v2=0, v3=0;
+
+function carrito(p1, p2){
+
+   
+
+    switch (p1) {
+        case 0:
+
+            if (p2 == 1) {
+                total+=80;
+                v1+=1;
+                document.getElementById('num0').innerHTML = v1;
+            }else if (total>=0 && p2==0 && v1>0) {
+                total-=80;
+                v1-=1;
+                document.getElementById('num0').innerHTML = v1;
+            }
+            
+        break;
+
+        case 1:
+
+            if (p2 == 1) {
+                total+=10;
+                v2+=1;
+                document.getElementById('num1').innerHTML = v2;
+            }else if ( total>=0 && p2==0 && v2>0) {
+                total-=10;
+                v2-=1;
+                document.getElementById('num1').innerHTML = v2;
+            }
+
+            
+        break;
+
+        case 2:
+            if (p2 == 1) {
+                total+=30000;
+                v3+=1;
+                document.getElementById('num2').innerHTML = v3;
+            }else if ( total>=0 && p2==0 && v3>0) {
+                total-=30000;
+                v3-=1;
+                document.getElementById('num2').innerHTML = v3;
+            }
+            
+        break;
+    }
+
+    document.getElementById('tot').innerHTML = total;
+    console.log(total);
+
+}
+
+function checkout() {
+
+    alert("Tu total es $"+Math.floor(total*1.16)+" con iva\n"+v1+" fotos de patas\n"+v2+" barras de jabon Zote\n"+v3+" liquidos de rodilla");
+    
+}
