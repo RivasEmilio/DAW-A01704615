@@ -1,19 +1,31 @@
+
+
 function test_str() { 
-    var res; 
+    var strongPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
     var str = document.getElementById("Password").value; 
     var rep = document.getElementById("p2").value; 
+ 
 
-    if (str == rep) 
-        alert("contraseña correcta"); 
+    if (strongPass.test(str)){
+        validator(str,rep);
+    }      
     else 
-        alert("contraseña incorrecta");
+        alert("La contraseña requiere 1 minuscula, 1 mayuscula, 1 numero, un caracter y debe ser de 8 caracteres");
 
-} 
+}
+
+function validator(Password, passCheck) {
+
+    if(Password === passCheck){
+        alert("La contraseña es correcta!");
+    }else
+        alert("La contraseña es incorrecta");
+    
+}
+
 let total=0, v1=0, v2=0, v3=0;
 
 function carrito(p1, p2){
-
-   
 
     switch (p1) {
         case 0:
