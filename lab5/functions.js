@@ -81,3 +81,40 @@ function checkout() {
     alert("Tu total es $"+Math.floor(total*1.16)+" con iva\n"+v1+" fotos de patas\n"+v2+" barras de jabon Zote\n"+v3+" liquidos de rodilla");
     
 }
+
+
+function test(pregunta, respuesta) {
+
+    switch (pregunta) {
+        case 0:
+            if (respuesta == 1) {
+                
+                alert("CORRECTO");
+            }else
+                alert("INCORRECTO");
+    
+        break;
+
+        case 1:
+
+            if (respuesta == 1) {
+                
+                alert("CORRECTO");
+            }else
+                alert("INCORRECTO");
+
+        break;
+
+        case 2:
+
+            if (respuesta == 1) {
+                
+                alert("CORRECTO");
+            }else
+                alert("INCORRECTO");
+            
+        break;
+    }
+    
+}
+
