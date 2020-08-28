@@ -42,7 +42,6 @@ td{
     background-image: url("bama.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
-    position: relative;
     position: absolute;
     top: 0; 
     left: 0; 
@@ -62,4 +61,17 @@ td{
     background-image: url("gandalf.gif");
     height: 280px;
     width: 496px;
+}
+
+h1,h2{
+    color:white;
+}
+
+.respuestas{
+    opacity: 0;  
+}
+
+.respuestas:hover{
+    opacity: 1;
+    background-color: black;
 }

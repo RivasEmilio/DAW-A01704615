@@ -182,4 +182,25 @@ function porqueMeHacesEstoRicardo(){
     }
 }
 
+setInterval(function(){ alert("Paso 1 minuto"); }, 60000);
 
+setTimeout(function(){ 
+
+    var audio = new Audio('xue.mp3');
+    audio.play();
+
+ }, 30000);
+
+ function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
