@@ -14,6 +14,7 @@
 body{
 
     background-image: url("ff.jpg");
+    
 }
 
 table{
@@ -33,4 +34,32 @@ td{
     border-style: solid;
     border-width: 2px;
     border-color: black;
+}
+
+#image{
+    height: 200px; /* or whatever, equal to the image you want 'watermarked' */
+    width: 200px; /* as above */
+    background-image: url("bama.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: relative;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    opacity: 0.6;  
+    color:white;
+}
+
+.button:hover{
+
+    font-style: oblique;
+    font-size: large;
+    font-weight: bold;
+    background-color: black;
+}
+
+#image:hover{
+    background-image: url("gandalf.gif");
+    height: 280px;
+    width: 496px;
 }
