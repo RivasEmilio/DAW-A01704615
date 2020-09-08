@@ -1,0 +1,19 @@
+¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.
+
+Despliega información sobre el estado actual de PHP. 
+Incluye información sobre las opciones de compilación y extensiones de PHP, 
+versión de PHP, información del servidor y entorno (si se compiló como módulo), 
+entorno PHP, versión del OS, rutas, valor de las opciones de configuración locales 
+y generales, cabeceras HTTP y licencia de PHP.
+
+Me llamo la atencion que puedes ver todas las variables predefinidas, los valoras locales y las 
+variables de entorno.
+
+¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?
+
+Incorporar protocolos de seguridad para evitar ataques.
+
+¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.
+
+El php es el lenguaje que se ejecuta en el servidor y la traduccion  de este es el que se envia al cliente.
+
