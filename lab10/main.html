@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action = "index.php" method = "GET" class="col s12">
+            <div class="row center-align">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate" name="name"/>
+                    <label for="first_name">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="age" type="text" class="validate" name="age"/>
+                    <label for="age">Edad</label>
+                </div>
+                <input class="btn-floating btn-large" type = "submit" />
+            </div>
+        </form>
+        <br><br><br><br><br><br>
+    </div>
+
+    <div class="container">
+
+        <div class="col s12">
+            <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="row valign-wrapper">
+                <div class="col s12">
+                        <span class="black-text">
+                            ¿Por qué es una buena práctica separar el controlador de la vista?<br>
+                            Se crea codigo mas limpio y mantenible.
+                            <br><br>
+                            Aparte de los arreglos $_POST y $_GET, ¿qué otros arreglos están predefinidos en php y cuál es su función?
+                            $GLOBALS<br>
+                            $_SERVER<br>
+                            $_GET<br>
+                            $_POST<br>
+                            $_FILES<br>
+                            $_COOKIE<br>
+                            $_SESSION<br>
+                            $_REQUEST<br>
+                            $_ENV
+                            <br><br>
+                            Explora las funciones de php, y describe 2 que no hayas visto en otro lenguaje y que llamen tu atención.
+                            strrev() ya que nunca habia visto una funcion de invertir strings tan simple,<br>
+                            implode() tampoco habia visto algo que imprimiera arrays de manera ordenada
+                            <br><br>
+                            ¿Qué es XSS y cómo se puede prevenir?<br>
+                            Son inyecciones de codigo y se previenen utilizando el htmlspecialchars.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+       
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
