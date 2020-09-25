@@ -1,0 +1,64 @@
+Ejercicio 2
+
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?
+
+Si el valor de costo no tiene punto decimal, existe otra clave 1000
+
+¿Qué ocurrió?
+Se creo un constraint y no dejo ingresar el valor
+
+
+¿Qué información muestra esta consulta?
+Me da los tipos y las restricciones con las que cuenta mi tabla
+
+¿Qué sentencias utilizaste para definir las llaves primarias?
+
+ALTER TABLE Materiales add constraint llaveMateriales PRIMARY KEY (Clave)
+
+ALTER TABLE Proveedores add constraint llaveProveedores PRIMARY KEY (RFC)
+
+ALTER TABLE Proyectos add constraint llaveProyectos PRIMARY KEY (Numero)
+
+¿Qué sentencias utilizaste para definir este constrait?
+
+ALTER TABLE Entregan add constraint llaveEntregan PRIMARY KEY (Clave, RFC, Numero, Fecha)
+
+
+Ejercicio 3
+
+¿Qué particularidad observas en los valores para clave, rfc y numero?
+No son consistentes
+¿Cómo responde el sistema a la inserción de este registro?
+Lo deja agregar sin error
+
+¿Qué significa el mensaje que emite el sistema?
+Que no se pudo ingresar el valor
+¿Qué significado tiene la sentencia anterior?
+Anexar clave de entregan y clave de materiales para evitar incongruencias
+
+¿Qué significan las columnas de esas consultas?
+Muestra constraints de esa pregunta y muestra referencias
+
+Ejercicio 4
+1000	AAAA800101   	5000	2020-09-23 22:17:47.630	0.00
+
+¿Qué uso se le está dando a GETDATE()?
+Se saca fecha actual
+
+¿Tiene sentido el valor del campo de cantidad?
+No ya que no se puede entregar 0 de algo
+
+¿Cómo responde el sistema?
+No deja ingresarlo
+
+¿Qué significa el mensaje?
+Que hubo un conflicto en el documento con los constraints
+
+Integridad referencial
+
+Esto es un concepto utilizado para construir y mantener relaciones logicas entre tablas para evitar corrupcion logica
+de datos.
+El concepto se refiere a que no permite agregar nada a una table que contenga la llave foranea a menos que
+se haga una referencia correspondiente a una llave primaria.
+
+Sql joining through referential integrity - w3resource. (2020). Retrieved 24 September 2020, from https://www.w3resource.com/sql/joins/joining-tables-through-referential-integrity.php

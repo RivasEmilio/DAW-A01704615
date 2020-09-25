@@ -1,0 +1,11 @@
+¿Que muestra la instrucción?
+
+¿Qué efecto tuvo esta acción?
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+
+¿Qué relación tienen con las tablas de la base de datos?
+
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+
+¿Qué sucedió?
