@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Lab15</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row center-align">
+
+            <form class="col s6 offset-s3 " action="index.php" method="post">
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input placeholder="Nombre Fruta" id="namefruit" type="text" class="validate" data-length="50" name="namefruit">
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Cantidad" id="quantityfruit" type="number" class="validate" data-length="50" name="quantityfruit">
+                    </div>
+                    <div class="input-field col s4">
+                        <input placeholder="Precio" id="pricefruit" type="number" class="validate" data-length="50" name="pricefruit">
+                    </div> 
+                </div>
+                
+                <div class="row">
+                    <input class="btn waves-effect waves-light" type="submit" name="submit-fruit" value="Cargar fruta">
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="functions.js"></script>
+    
+</body>
+</html>

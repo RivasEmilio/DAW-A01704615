@@ -16,7 +16,7 @@
         }
 
         return $con;
-
+    }
     //Haz una función llamada closeDB que recibirá como parámetro una conexión establecida previamente.
     //La variable $mysql es una conexión establecida anteriormente
     //tomando de ejemplo la maigen anterior, podría mandar a llamar la función
@@ -47,11 +47,28 @@
     function getFruitsByName($fruit_name)
     {
         $conn = connectDb();
-        $sql = "SELECT name, units, quantity, price FROM Fruit WHERE name LIKE '%".$fruit_name."%'";
+        $sql = "SELECT name, quantity, price FROM Fruit WHERE name LIKE '%".$fruit_name."%'";
         $result = mysqli_query($conn, $sql);
         closeDb($conn);
         return $result;
     }
-}
+
+    function insertFruit($name,$quantity,$price){
+
+        $conn = connectDb();
+
+        $sql = "INSERT INTO Fruit (name, quantity, price) VALUES (\"".$name."\",\"". $quantity ."\",\"".$price."\" );";
+
+        if(mysqli_query($conn, $sql)){
+            echo "new record created succesfully";
+            closeDb($conn);
+            return true;
+        }else {
+            echo "error: ".$sql. "<br>" . mysqli_error($conn);
+            return false;
+        }
+        closeDb($conn);
+    }
+
 ?>
 
