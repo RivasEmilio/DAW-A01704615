@@ -1,0 +1,16 @@
+¿Qué es ODBC y para qué es útil?
+
+Open DataBase Connectivity (ODBC) es un estándar de acceso a las bases de datos. 
+ODBC hace posible el acceder a cualquier dato desde cualquier aplicación.
+
+¿Qué es SQL Injection?
+
+SQL injection es el inyectar codigo malicioso atravez de SQL atravez del input.
+
+¿Qué técnicas puedes utilizar para evitar ataques de SQL Injection?
+
+Prepared statements
+
+¿Por qué es una buena práctica separar el modelo del controlador?
+
+Evita problemas y crea una aplicacion mas limpia.
