@@ -6,9 +6,9 @@
 
     if(mysqli_num_rows($result) > 0)
     {
-        echo "<div class='container'>";
+       
         echo "<div class='row'>";
-        echo "<div class='col s12 m4 l8 offset-l2'>";
+   
         //output data of each row
         echo "<table>";
         echo "<thead>";
@@ -33,8 +33,8 @@
         echo "</tbody>";
         echo "</table>";
         echo "</div>";
-        echo "</div>";
-        echo "</div>";
+      
+       
     }
 
     if(isset($_POST["submit-fruit"]) && !empty($_POST["submit-fruit"])){
@@ -52,6 +52,40 @@
         }
 
     }
+
+    if(isset($_POST["delete-fruit"]) && !empty($_POST["delete-fruit"])){
+
+        $name = $_POST["nfd"];
+
+        if(isset($_POST["nfd"]) && !empty($_POST["nfd"]) ){
+            echo "eliminado de base de datos";
+            deleteFruit($name);
+            header('Location: '.$_SERVER['REQUEST_URI']);
+            
+        }else{
+            echo '<script>alert("Asegurate de ingresar todos los datos");</script>';
+        }
+        
+    }
+
+    if(isset($_POST["mod-fruit"]) && !empty($_POST["mod-fruit"])){
+
+        $name = $_POST["nfm"];
+        $quantity = $_POST["qfm"];
+        $price = $_POST["pfm"];
+
+        if(isset($_POST["nfm"]) && !empty($_POST["nfm"]) && isset($_POST["qfm"]) && !empty($_POST["qfm"]) && isset($_POST["pfm"]) && !empty($_POST["pfm"])){
+
+            updateDB($name,$quantity,$price);
+            header('Location: '.$_SERVER['REQUEST_URI']);
+            
+        }else{
+            echo '<script>alert("Asegurate de ingresar todos los datos");</script>';
+        }
+        
+    }
+
+    include("footer.html");
 
 
     

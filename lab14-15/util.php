@@ -70,5 +70,40 @@
         closeDb($conn);
     }
 
+    function deleteFruit($name){
+
+        $conn = connectDb();
+
+        $sql = "DELETE FROM Fruit WHERE name = '$name'";
+
+        if(mysqli_query($conn, $sql)) {
+            echo $name." deleted succesfully";
+            closeDb($conn);
+            return true;
+        }else {
+            echo "error: ".$sql."<br>". mysqli_error($conn);
+            return false;
+        }
+
+        closeDb($conn);
+    }
+
+    function updateDB($name,$quantity,$price){
+
+        $con = connectDb();
+        $sql = "UPDATE Fruit SET name='$name',quantity='$quantity',price='$price' WHERE name = '$name'";
+        if(mysqli_query($con, $sql)){
+            echo "Nuevo dato ingresado correctamente";
+            closeDB($con);
+            return true;
+        }
+        else{
+            echo "error: ".$sql."<br>". mysqli_error($conn);
+            return false;
+        }
+        closeDB($con);
+    }
+
+
 ?>
 
