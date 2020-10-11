@@ -29,7 +29,32 @@
     function getPass($username)
     {
         $conn = connectDb();
-        $sql = "SELECT Contrasena, FROM usuario WHERE Id_usuario = \"". $username ."\"";
+        $sql = "SELECT Contrasena FROM usuario WHERE Id_usuario =  '$username' ";
+        $result = mysqli_query($conn, $sql);
+        $row = $result->fetch_assoc();
+        $pass = implode(',' ,$row);
+        
+        closeDb($conn);
+        
+        return $pass;
+    }
+
+    function getRol($idusuario)
+    {
+        $conn = connectDb();
+        $sql = "SELECT Id_Rol FROM roles_usuario WHERE Id_usuario = '$idusuario'";
+        $result = mysqli_query($conn, $sql);
+        $row = $result->fetch_assoc();
+        $rol = implode(',' ,$row);
+
+        closeDb($conn);
+        return $rol;
+    }
+
+    function getUsers()
+    {
+        $conn = connectDb();
+        $sql = "SELECT Id_Usuario, Nombre, Apellidos FROM usuario";
         $result = mysqli_query($conn, $sql);
 
         closeDb($conn);
@@ -37,15 +62,14 @@
         return $result;
     }
 
-    //Haz por lo menos dos funciones que hagan una consulta a la base de datos con algunos parametros.
-    //funcion que regresará los datos de una fruta que tenga en su nombre el parámetros
-    //Ejemplo, si pongo manzana, me puede regresar manzana roja, manzana whashington, etc.accent-1
-    function getRol($idusuario)
+    function getEmp()
     {
         $conn = connectDb();
-        $sql = "SELECT Id_Rol FROM roles_usuario WHERE Id_usuario = '$idusuario'";
+        $sql = "SELECT Id_Usuario, RFC FROM trabajadores";
         $result = mysqli_query($conn, $sql);
+
         closeDb($conn);
+
         return $result;
     }
 

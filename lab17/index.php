@@ -1,5 +1,6 @@
 <?php
     //Despliega las funciones hechas anteriormente en algunas vistas.
+    session_start();
     require_once ('util.php');
     
     if(isset($_POST["submit"]) && !empty($_POST["submit"])){
@@ -12,12 +13,20 @@
             $pass = getPass($usuario);
             
             if ($pass == $contra) {
-                echo '<script>alert("Contraseña correcta");</script>';
+               
+                $rol = getRol($usuario);
+                $_SESSION['usuario'] = $usuario;
+                $_SESSION['rol'] = $rol;
+                
+                
+
+                header("Location: panel.php");
+
             }else
-                echo '<script>alert("Contraseña incorrecta '.$pass.'");</script>';
+                echo '<script>alert("Contraseña incorrecta ");</script>';
         }else
         echo '<script>alert("Asegurate de ingresar todos los datos");</script>';
     }
 
-    
+    include("main.html");
 ?>
