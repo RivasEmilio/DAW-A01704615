@@ -11,6 +11,7 @@
         
     }else{
         echo '<script>alert("Asegurate de ingresar todos los datos");</script>';
+        printFruits();
     }
     
 
