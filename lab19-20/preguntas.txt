@@ -1,0 +1,18 @@
+Elabora un diagrama y explica cómo funciona AJAX.
+ajax hace request de manera asincrona y regresa los resultados atravez de dom
+
+Navegador<-- Jquery <-- Cliente web  <-- php <-- servidor
+
+¿Qué alternativas a jQuery existen?
+
+Cualquier framework de JS
+
+¿Qué es una promesa en js?
+
+un tipo de objeto en el que la funcion regresa una promesa y significa que no tiene un valor actualmente
+pero en el futuro la tendra.
+
+¿Cómo funcionan async y await?
+
+asyn es una funciona asincrona
+y await hace que espera la promesa
