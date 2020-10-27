@@ -1,0 +1,26 @@
+¿Qué hace el primer bloque del código (bloque del IF)?
+checa que no existan funciones llamadas igual
+
+¿Para qué sirve la instrucción GO?
+marca el inicio y el fin de query
+
+¿Explica que recibe como parámetro este Procedimiento y qué tabla modifica?
+@uclave NUMERIC(5,0),
+@udescripcion VARCHAR(50),
+@ucosto NUMERIC(8,2),
+@uimpuesto NUMERIC(6,2)
+
+modifica la tabla materiales
+
+Explica en tu reporte qué recibe como parámetro este procedimiento y qué hace.
+
+la descripcion y costo de un material y hace un query basado en cuales materiales son mas grandes 
+y el nombre se asemeja
+
+¿Qué ventajas tienen el utilizar Stored Procedures en una aplicación cliente-servidor?
+es mas seguro
+
+¿Qué ventajas tiene utilizar SP en un proyecto?
+es mas limpio y evita errores
+
+NO PUEDO MOSTRARLES STORED PROCEDURES DE MI PROYECTO PORQUE SI ES DE UN CLIENTE DE VERDAD
