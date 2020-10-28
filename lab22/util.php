@@ -57,7 +57,7 @@
 
         $conn = connectDb();
 
-        $sql = "EXECUTE addFruit $name,$quantity,$price";//stored procedure
+        $sql = "SET @p0='$name'; SET @p1='$quantity'; SET @p2='$price'; CALL `addFruit`(@p0, @p1, @p2);";//stored procedure
 
         if(mysqli_query($conn, $sql)){
             echo '<script>alert("'.$name.' created succesfully");</script>';
