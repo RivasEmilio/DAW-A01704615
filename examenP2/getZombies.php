@@ -20,14 +20,16 @@
             echo "<tbody>";
             while($row = mysqli_fetch_assoc($result))
             {
-            
+                $name = getNombre($row["id"]);
+                $res = mysqli_fetch_array($name);
                 echo "<tr>";
-                echo "<td>" . $row["id"] . "</td>";
+                echo "<td>" . $res[0] . "</td>";
         
                 echo "<td>" . $row["nestado"] . "</td>";
         
                 echo "<td>$" . $row["fecha"] . "</td>";
                 echo "</tr>";
+
             }
             echo "</tbody>";
             echo "</table>";

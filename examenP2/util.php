@@ -41,42 +41,54 @@
     function createZombie($name,$id)
     {
         $conn = connectDb();
-        $sql = "CALL `createZombie`($name,$id);";
+        $sql = "CALL `createZombie`('$name','$id');";
         $result = mysqli_query($conn, $sql);
 
         closeDb($conn);
-
-        return $result;
     }
 
     function getZombieNum($estado)
     {
         $conn = connectDb();
-        $sql = "CALL `getZombienum`($estado);";
+        $sql = "CALL `getZombienum`('$estado');";
+        $result = mysqli_query($conn, $sql);
+        
+        closeDb($conn);
+       
+        return  $result;
+    }
+
+    function getNombre($name)
+    {
+        $conn = connectDb();
+        $sql = "CALL `getZname` ('$name')";
         $result = mysqli_query($conn, $sql);
         closeDb($conn);
 
         return $result;
     }
 
-    function getEstadoNum($estado)
+    function getID($name)
     {
         $conn = connectDb();
-        $sql = "CALL `getZombienum`($estado);";
+        $sql = "CALL `getID` ('$name')";
         $result = mysqli_query($conn, $sql);
         closeDb($conn);
 
         return $result;
     }
 
-    function getZombie($estado)
-    {
+    function addZombie($name, $id, $estado)
+    {   
+        
+        createZombie($name,$id);
         $conn = connectDb();
-        $sql = "CALL `getZombienum`($estado);";
+        $sql = "CALL `addState`('$id','$estado');";
         $result = mysqli_query($conn, $sql);
+
         closeDb($conn);
 
-        return $result;
+        return  $result;
     }
 
     function getDateZ()
@@ -89,6 +101,17 @@
         return $result;
     }
 
+    function updateState( $id, $estado)
+    {   
+        $name = getID($id);
+        $res = mysqli_fetch_array($name);
+        $conn = connectDb();
+        $sql = "CALL `updateState`('$estado','$res[0]')";
+        $result = mysqli_query($conn, $sql);
+        closeDb($conn);
+
+        return $result;
+    }
 
     function printZombies(){
         $result = getDateZ();
@@ -110,14 +133,16 @@
             echo "<tbody>";
             while($row = mysqli_fetch_assoc($result))
             {
-            
+                $name = getNombre($row["id"]);
+                $res = mysqli_fetch_array($name);
                 echo "<tr>";
-                echo "<td>" . $row["id"] . "</td>";
+                echo "<td>" . $res[0] . "</td>";
         
                 echo "<td>" . $row["nestado"] . "</td>";
         
                 echo "<td>$" . $row["fecha"] . "</td>";
                 echo "</tr>";
+
             }
             echo "</tbody>";
             echo "</table>";
