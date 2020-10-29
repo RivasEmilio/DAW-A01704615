@@ -1,7 +1,7 @@
 
 
 $(document).ready(function() {
-
+    $('select').formSelect();
     var request;
     request = $.ajax({
         url: "getZombies.php",

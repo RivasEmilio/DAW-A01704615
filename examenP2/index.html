@@ -18,7 +18,7 @@
 <body>
     <header></header>
 
-    <main>
+   
 
         <div class="navbar-fixed">
             <nav>
@@ -41,7 +41,14 @@
                         <div class="row">        
                             <h5>Cuantos Zombies por estado</h5>
                             <div class="input-field col s5">
-                                <input placeholder="Estado" id="estado" type="text" class="validate" data-length="50" name="submit-estado">
+                                <select name="submit-estado" id="estado" type="text" class="validate">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="desmayo">desmayo</option>
+                                    <option value="desorientación">desorientación</option>
+                                    <option value="infeccio">infeccion</option>
+                                    <option value="transformacion">transformacion</option>
+                                    <option value="violencia">violencia</option>
+                                </select>
                             </div>
                         </div>
                         
@@ -55,8 +62,15 @@
                             <div class="input-field col s3">
                                 <input placeholder="Nombre" id="nombre" type="text" class="validate" data-length="50" name="submit-name">
                             </div>
-                            <div class="input-field col s3">
-                                <input placeholder="Estado" id="estado1" type="text" class="validate" data-length="50" name="submit-estado1">
+                            <div class="input-field col s4">
+                                <select id="estado1" type="text" class="validate" name="submit-estado1">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="desmayo">desmayo</option>
+                                    <option value="desorientación">desorientación</option>
+                                    <option value="infeccio">infeccion</option>
+                                    <option value="transformacion">transformacion</option>
+                                    <option value="violencia">violencia</option>
+                                </select>
                             </div>
                             <div class="input-field col s3">
                                 <input placeholder="ID-6DIGITOS" id="submit-id" type="text" class="validate" data-length="6" name="submit-id">
@@ -74,7 +88,16 @@
                                 <input placeholder="Nombre" id="nombre" type="text" class="validate" data-length="50" name="submit-name1">
                             </div>
                             <div class="input-field col s3">
-                                <input placeholder="Estado" id="estado1" type="text" class="validate" data-length="50" name="submit-estado2">
+                                <div class="input-field col s4">
+                                    <select  id="estado2" type="text" class="validate" name="submit-estado2">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="desmayo">desmayo</option>
+                                        <option value="desorientación">desorientación</option>
+                                        <option value="infeccio">infeccion</option>
+                                        <option value="transformacion">transformacion</option>
+                                        <option value="violencia">violencia</option>
+                                    </select>
+                                </div>
                             </div>
                             
                         </div>
@@ -98,7 +121,6 @@
                     </div>
                 </div>
         </div>
-    </main>
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
     <footer class="blue darken-1 page-footer">
         <div class="container">
@@ -113,6 +135,11 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+    </script>
     <script src="ajax.js"></script>
 
 </body>
