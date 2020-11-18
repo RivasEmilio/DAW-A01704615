@@ -1,2 +1,0 @@
-Material design es una normativa de diseño enfocado en la visualización del sistema operativo Android, además en la web y en cualquier plataforma. 
-Este mismo se enfoca en  dar profundidad, texturas y sombras a el diseño de UI.

@@ -1,0 +1,20 @@
+1.-¿Que pasa cuando deseas realizar esta consulta?
+Muestra la tabla de CLIENTES_BANCA con los cambios 
+
+2.-¿Qué pasa cuando deseas realizar esta consulta?
+Se bloquea la tabla
+
+3.- Explica por qué ocurre dicho evento.
+Esto ocurre porque la tabla la esta utilizando la primera sesion, la segunda sesion no puede editar ni ver los datos de la tabla hasta que la primera sesion terminara de hacer los cambios y actualizara la tabla
+
+4.-¿Qué ocurrió y por qué?
+El rollback regreso la tabla a como estaba antes de realizar la transaccion
+
+5.-¿Para qué sirve el comando @@ERROR revisa la ayuda en línea?
+el commando @@ERROR es un contador que esta al pendiente de los errores de mi script, cada vez que encuentra un error agrega un valor al contador
+
+6.-¿Qué hace la transacción?
+La transaccion inserta 3 clientes nuevos a la tabla de CLIENTES_BANCA, pero, si algun dato es incorrecto, como podria ser que el numero de cuenta sea repetido, no inserta ninguno, es decir, hace el rollback de esa transaccion y no inserta ningun elemento, incluso los que estaban bien
+
+7.-¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué.
+Para esta transaccion no, ya habian inserts con errores, ya que tenian numeros de cuentas ya existentes y eso conflictua con la unnicidad de las llaves primarias
