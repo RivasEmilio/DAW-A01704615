@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    height: 600px;
+    padding-top: 28px;
+    color: white;
+    background-image:url(../../Content/img/imgPlantilla2/FondoAzulPlantilla2_2.svg);
+    
+}
+#imgNom{
+    margin-left: 8%;
+}
+nav p{ 
+        padding-top: 10px;
+        font-weight:bold ;
+}
+nav a{ 
+    color: white;
+    margin-right:8%;
+}
+#praro{
+    font-size: 1.3em;
+}
+section h1{
+    font-weight: bold;
+}
+.whiteIcon{
+    color:white;
+}
+.tipoSeguro{
+    background-color: #FAFAFA;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 54px;
+    width: 195px;
+    border-radius: 100px 100px 100px 5px;
+    color: #8A98A9;
+    font-size: 1.2em;
+    text-decoration: none;
+    white-space:nowrap;
+}
+.tipoSeguro:focus{
+    background-color: #F29133;  
+    color: white;  
+    outline: none;
+    border: none;
+}
+.AseguradoraImagen{
+    width: 120px;
+    height: 80px;
+}
+.divider{
+    color: #455EC7;
+    font-weight: 800;
+    text-align: center;
+}
+.divider span{
+    display: inline-block;
+    position: relative;  
+  }
+.divider span:before,.divider span:after{
+    content: "";
+    position: absolute;
+    width: 345px;
+    top: 15px;
+    height: 1px;
+    background-color: #F29133;
+}
+.divider span:before{
+    left: 100%;
+    margin-left: 30px;
+}
+.divider span:after{
+    right: 100%;
+    margin-right: 30px;
+}
+#bubble{
+    width: 480px;
+    height: 240px;
+    background: #455EC7;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 5px;
+    color: white;
+  }
+#bubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 90px;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 26px solid #455EC7;
+    border-bottom: 35px solid transparent;
+  }
+#formAutos input{
+    padding-left: 10px;
+    height: 44px;
+    box-sizing: border-box;
+    height: 44px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+}
+
+::placeholder{
+    color:#8A98A9;
+    vertical-align: middle;
+    margin-left: 10px;   
+}
+.typeButtonLeft{
+    height: 44px;
+    width: 133px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #F29133;
+    background-color: white;
+    color: #F29133;
+}.typeButtonRight{
+    box-sizing: border-box;
+    height: 44px;
+    width: 133px;
+    border: 1px solid #F29133;
+    border-radius: 0 5px 5px 0;
+    background-color: white;
+    color: #F29133;
+}
+.longText{
+    width: 552px;
+}
+.textA{
+    width: 266px;
+}
+.textB{
+    width: 197px;
+}
+#buttonCotizar{
+    height: 54px;
+    width: 256px;
+    outline: none;
+    border: none;
+    border-radius: 27px;
+    background-color: #F29133;
+    color: white;
+    font-weight: bold;
+
+}
+#bubble:focus,#buttonCotizar:focus,.typeButtonLeft:focus,.typeButtonRight:focus,.longText:focus,.textA:focus,.textB:focus{
+    outline: none;
+    border: none;
+}
+#mapa,#datos{
+    width: 50%;
+}
+#datos{
+    background: #F2F2F2;
+}
+#about{
+    width: 100%;
+    height: 150px;
+    background: #455EC7;
+}
+#poweredBy{
+    width: 100%;
+    height: 70px;
+    background: #3B314A;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: white;
+}
+.checkbox{
+    width: 22px;
+    height: 22px;
+    border: 1px solid #F29133;
+
+}
+.checkbox:checked{
+    background-color: #F29133;
+}
+.act{
+    background-color: #F29133;
+    color: white;
+}

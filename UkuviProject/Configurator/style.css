@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+  background-color: #f3f3f3; 
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 1080px) {
+  #sidebar-container{
+    width: 210px!important;
+    height: 100vh;
+  }
+  #sidebar-container .side-element{
+    height: 70px;
+    width: 210px!important; 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+
+  #page-content{
+    padding-left: 210px!important;
+    
+  }
+  #sidebar-container .logo{
+    padding-left: 20px!important;
+  }
+  .text-format{
+    padding-left: 15px!important;
+  }
+  .bContinuar{
+    margin-left: 40px!important; 
+  }
+  .pnavText{
+    margin-left: 15px!important;
+  }
+}
+.nav-item a{
+  font-family: 'Roboto'"Source Sans Pro Regular" !important;
+  color: #465F74 !important;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+#sidebar-container{
+  width: 350px;
+  height: 970px;
+}
+
+#page-content{
+  padding-left: 350px;
+}
+
+#sidebar-container .logo{
+  width: 100%;
+  height: 100px;
+  padding-top: 30px;
+  padding-left: 40px;
+  color: #4E455C;
+  font-family: 'Roboto'"Source Sans Pro";
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+
+}
+
+#sidebar-container .menu{
+  padding-top: 30px;
+  padding-left: 30px;    
+}
+
+#sidebar-container .side-element{
+  height: 54px;
+  width: 100%; 
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 25px;
+
+}
+
+.secElement{
+  height: 54px;
+  width: 100%; 
+  background-color: #FFFFFF;
+  box-shadow: -1px 0 0 0 #FAFAFA, 1px 0 0 0 #FAFAFA, 0 1px 0 0 #E0E0E0, 0 -1px 0 0 #E0E0E0;
+}
+
+.pnavText{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  color: #9D98A4;
+  margin-left: 60px;
+  margin-top: 15px;
+}
+
+.iconpnav{
+  color: #9D98A4; 
+  margin-right:40px
+}
+
+.text-format{
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  color: #9D98A4;
+}
+
+.active1, .side-element:hover, .secElement:hover{
+  background-color: #338CFF !important;
+
+}
+
+.active1 p, .side-element:hover p, .side-element:hover .chev-con, .active1 .chev-con , .secElement:hover .pnavText, .secElement:hover .iconpnav{
+  font-weight: bold !important;
+  color: white !important;
+}
+
+#sidebar-container .side-element .chev-con{
+  color: #9D98A4;
+  padding-right: 40px;
+}
+
+#page-content .title-t, #pc-text p{
+  color: #4E455C;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+#place-holder .title-t{
+  padding-top: 40px;
+  color: #4E455C;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+  
+.selected{
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.301);
+}
+
+.bot-select{
+  height: 44px;
+  width: 160px;
+  border-radius: 22px;
+  background-color: #9D98A4;
+  font-family: 'Roboto'"Source Sans Pro Regular";
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  color: white !important;
+}
+
+.selectors{
+
+  padding-top: 50px;
+
+}
+
+.bot-select p{
+  padding-top: 9px;
+}
+
+.ver-bot{
+  height: 44px;
+  width: 90px;
+  border-radius: 22px;
+  background-color: #FAFAFA;
+  font-family: 'Source Sans Pro', sans-serif;;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  color: #9D98A4 !important;
+  padding-top: 9px;
+}
+
+.gcPlant, .killand, .gcCambios {
+
+  height: 56px;
+  width: 197px;
+  border-radius: 5px;
+  background-color: #068D9D;
+  font-family: 'Source Sans Pro', sans-serif;;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 16px;
+  cursor: pointer;
+}
+
+.ccPlant, .keepplant{
+  height: 56px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #586061;
+  font-family: 'Source Sans Pro', sans-serif;;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  color: #FAFAFA;
+  padding-top: 16px;
+  cursor: pointer;
+}
+
+.viewing{
+  background-color: #006FFF  !important;
+  font-weight: bold !important;
+
+}
+
+
+.card-img-top{
+  height: 160px;
+  width: 220px;
+}
+
+
+.bContinuar, .insureDelete,.numDelete, .mailDelete, .helpSelect, .elim, 
+.ramoSelected, .boxramo, .ramo-add, 
+.p-select ,.insureSelected, .logoAsegura, 
+.cnAsegur,.editarAsegura, .confDom, 
+.ccPlant, .gcPlant, .btprev, .b-t p, 
+.p-cb p, #sidebar-container p,.colorSelect, 
+.irland, .copland, .deland, .bot-select, .ver-bot, .iconPerso, .secElement, .finAsegur, .close-ramo{
+  cursor: pointer;
+}
+
+.butt-dom{
+  width: 220px;
+  height: 78px;
+  margin-right: 10px;
+  background-color: white;
+  color: grey;
+  border:none;
+  outline: none;
+  border-bottom: 5px solid #BDC1C2;
+}
+
+.butt-dom:hover{
+  border:none;
+  border-bottom: 5px solid #338CFF;
+  outline: none;
+  color: #338CFF;
+  font-weight: bold;
+}
+
+.butt-domS{
+  border:none;
+  border-bottom: 5px solid #338CFF;
+  outline: none;
+  color: #338CFF;
+  font-weight: bold;
+}
+.nomDom{
+  width: 177px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #afbdc0;
+  font-size: 18px;
+}
+.errorDom{
+  width: 177px;
+  height: 44px;
+  border-radius: 5px;
+  border: 2px solid #ed2112;
+  font-size: 18px;
+}
+
+.incompleto{
+  border-radius: 5px;
+  border: 2px solid #ed2112;
+}
+
+.completo{
+  border-radius: 5px;
+  border: 2px solid#12CBED;
+}
+
+.succDom{
+  width: 177px;
+  height: 44px;
+  border-radius: 5px;
+  border: 2px solid#12CBED;
+  font-size: 18px;
+}
+.nomDom:focus{
+  outline: none;
+}
+
+.confDom{
+  height: 56px;
+  width: 197px;
+  border-radius: 5px;
+  background-color: #068D9D;
+  border:none;
+  outline: none;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.asistencia{
+  height: 56px;
+  width: 197px;
+  border-radius: 5px;
+  background-color: #068D9D;
+  border:none;
+  outline: none;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+
+.confDom:focus{
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+}
+.fnt{
+  color: #4E455C;
+  font-family: 'Roboto'"Source Sans Pro Regular";
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+.colorSelect{
+  box-sizing: border-box;
+  height: 42px;
+  width: 72px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+}
+
+.cSelected{
+
+  border: 2px solid #e4e0e0 !important;;
+}
+
+.cardTitle {
+  padding-left: 12px;
+  width: 841px;
+  height: 94px;
+  border: 1px solid #E0E0E0;
+  background-color: #FFFFFF
+}
+
+.secText{
+  color: #9D98A4;
+  font-family: 'Source Sans Pro', sans-serif;;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  padding-left: 50px;
+}
+
+.publicacion{
+  box-sizing: border-box;
+  height: 44px;
+  width: 380px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  color: #4E455C;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.pubTexto{
+  box-sizing: border-box;
+
+  color: #4E455C;
+  border: #f3f3f3;
+  background-color: #f3f3f3;
+  border-radius: 5px;
+}
+
+.irland{
+  height: 44px;
+  width: 136px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #9D98A4;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+.copland{
+  height: 44px;
+  width: 152px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #9D98A4;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+.deland{
+  height: 44px;
+  width: 96px;
+  border-radius: 5px;
+  background-color: #EAE9EA;
+  color: #9D98A4;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+.iconPerso {
+
+  color: #006FFF;
+  font-size: 40px;
+}
+
+.cardCont{
+
+  padding-left: 12px;
+  width: 841px;
+  border: 1px solid #E0E0E0;
+  background-color: #FFFFFF
+}
+
+.presprev{
+  box-sizing: border-box;
+  height: 152px;
+  width: 341px;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  background-color: #FAFAFA;
+}
+
+.bodyprev{
+  
+  color: #4E455C;
+}
+
+.btprev{
+
+  height: 44px;
+  width: 212px;
+  border-radius: 22px;
+  background-color: #068D9D;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 16px;
+
+}
+
+.boxAsegura{
+  height: 80px;
+  width: 116px;
+  border-radius: 10px;
+  background-color: #EAF3FF;
+}
+
+.logoAsegura, .insureS2{
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: #EAF3FF;
+}
+
+.editarAsegura{
+  height: 80px;
+  width: 116px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.cnAsegur, .finAsegur{
+  
+  height: 56px;
+  width: 149px;
+  border-radius: 5px;
+  background-color: #068D9D;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 16px;
+}
+
+.insureSelected{
+  background-color: #b8bfc8 !important;
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
+}
+
+.p-select{
+  height: 44px; 
+  width: 90px;
+  border-radius: 22px;
+  background-color: #9D98A4;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  line-height: 25px;
+  color: white ;
+}
+
+.ramo-add {
+  box-sizing: border-box;
+  height: 44px;
+  width: 144px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+.ramo{
+  box-sizing: border-box;
+  height: 44px;
+  width: 144px;
+  border-radius: 5px;
+  background-color:#EAF3FF;
+}
+
+.boxramo{
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+}
+
+.ramoSelected{
+  background-color:#EAF3FF !important;
+  color: white;
+  height: 50px;
+  width: 70px;
+  border-radius: 5px;
+}
+
+.text-edit{
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-size: 18px; 
+  color: #9D98A4;
+}
+
+.elim{
+  font-size: 18px; 
+  padding-left: 10px; 
+  color: #9D98A4;
+}
+
+.helpSelect{
+  box-sizing: border-box;
+  height: 60px;
+  width: 330px;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+}
+
+.helpSelected{
+  border: 2px solid #116FFF;
+}
+
+.toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20rem; }
+.toggle.ios .toggle-handle { border-radius: 20rem; }
+
+.fast  .toggle-group { transition: left 0.1s; -webkit-transition: left 0.1s; }
+
+.addTelefono, .addCorreo{
+  height: 44px;
+  width: 193px;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  cursor: pointer;
+  
+}
+
+.formText{
+  color: #4E455C; 
+  font-family: 'Roboto'"Source Sans Pro Regular"; 
+  font-size: 16px; 
+  font-weight: bold; 
+  padding-right: 30px!important;
+}
+
+.insureDelete{
+  font-size: 15px!important;
+  color: #4E455C;
+  padding-bottom: 50px;
+  margin-left: 10px!important;
+  
+}
+
+.imgLogo{
+  margin-left: 15px!important;
+}
+
+.vbPrevia{
+  height: 56px;
+  width: 197px;
+  border-radius: 5px;
+  background-color: #338CFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 16px;
+}
+.bContinuar{
+
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #068D9D!important;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 240px;
+  height: 56px;
+  width: 197px;
+  font-size: 20px;
+  
+}
+
+.footerPer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px; 
+  line-height: 60px; 
+  background-color:#FFFFFF;
+  flex-grow: 1;
+  border: 1px solid #E0E0E0;
+}
+
+.available{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #12CBED;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 15px;
+  left: 3px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:checked + .slider {
+  background-color:  #338CFF;
+  
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #338CFF;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 16px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#preloadScreen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloadScreen:before {
+  content: '';
+  position: fixed;
+  top: calc(50% - 110px);
+  left: calc(50% - 75px);
+  border: 3px solid #338CFF;
+  border-top-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  width:  150px;
+  height: 150px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.presU{
+  color: #4E455C; 
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.presUB{
+  font-weight: bold;
+}
+
+.rtex{
+  color: #9D98A4;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
+.ramo-add:hover, .ramo-add:hover p, .ramo-add:hover i, .editarAsegura:hover, .editarAsegura:hover p, .editarAsegura:hover i{
+  background-color: #338CFF !important;
+  color: #ffffff !important;
+}

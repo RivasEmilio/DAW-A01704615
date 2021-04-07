@@ -1,0 +1,85 @@
+﻿@*@model IEnumerable<WebApplication1.Models.LandingPage>
+
+@{
+    var rowCounter = 0;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+    <div> 
+        <table>
+            <tr>
+                <th>ID_Page</th>
+                <th>Dominio Page</th>
+                <th>Plantilla</th>
+                <th>Imagen</th>
+                <th>Titulo</th>
+                <th>Mensaje1</th>
+                <th>Mensaje2</th>
+            </tr>
+            @foreach (var item in LandingPage)
+            {
+        <tr>
+            <td>'@item.ID_Page'</td>
+            <td>'@item.Dominio_Page'</td>
+            <td>'@item.Titulo_Profesional'</td>
+            <td>'@item.Plantilla'</td>
+            <td>'@item.Imagen'</td>
+            <td>'@item.Mensaje_1'</td>
+            <td>'@item.Mensaje_2'</td>
+        </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>*@
+@{ 
+    ViewData["Title"] = "Display Data";
+    string[] TableHeaders = new string[] { "ID_Page",
+       "Dominio_Page",
+        "Plantilla",
+        "Imagen",
+        "Titulo_Profesional",
+        "Mensaje_1",
+        "Mensaje_2"};
+
+}
+
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                @{
+                    foreach(var head in TableHeaders)
+                    {
+                        <th>@head</th>
+                    }
+                }
+            </tr>
+        </thead>
+        @{ if (Model != null)
+            {
+                foreach (var Data in Model)
+                {
+                <tr>
+                    <td>@Data.ID_Page</td>
+                    <td>@Data.Dominio_Page</td>
+                    <td>@Data.Plantilla</td>
+                    <td>@Data.Imagen</td>
+                    <td>@Data.Titulo_Profesional</td>
+                   
+                    <td>@Data.Mensaje_1</td>
+                    <td>@Data.Mensaje_2</td>
+                </tr>
+                }
+            }
+
+        }
+    </table>
+</div>

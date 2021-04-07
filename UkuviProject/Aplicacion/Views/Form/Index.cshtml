@@ -1,0 +1,30 @@
+﻿
+
+<input type="number" id="text" />
+<input type="text" id="number" />
+<input type="number" id="checkbox" />
+<input type="number" id="imagen" />
+<input type="text" id="titulo" />
+<input type="text" id="men1" />
+<input type="text" id="men2" />
+
+<button onclick="submit()">Post with jQuery AJAX</button>
+
+<script>
+
+    //submit data with jQuery AJAX
+    function submit() {
+        var data = {
+            ID_Page: $('#text').val(),
+            Dominio_Page: $('#number').val(),
+            Plantilla: $('#checkbox').val(),
+            Imagen: $('#imagen').val(),
+            Titulo_Profesional: $('#titulo').val(),
+            Mensaje_1: $('#men1').val(),
+            Mensaje_2: $('#men2').val()
+        };
+
+        $.post("/Form/FormFour", { formData: data },
+            function () { alert('Successfully posted to server') });
+    }
+    </script>

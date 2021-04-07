@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UkuviTecModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AgenteSCliente">
+    <Key>
+      <PropertyRef Name="ID_Agente" />
+      <PropertyRef Name="ID_Cliente" />
+    </Key>
+    <Property Name="ID_Agente" Type="int" Nullable="false" />
+    <Property Name="ID_Cliente" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgenteSeguros">
+    <Key>
+      <PropertyRef Name="ID_Agente" />
+    </Key>
+    <Property Name="ID_Agente" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Foto_logo" Type="varchar" MaxLength="100" />
+    <Property Name="CorreoElectronico_1" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="CorreoElectronico_2" Type="varchar" MaxLength="255" />
+    <Property Name="CorreoElectronico_3" Type="varchar" MaxLength="255" />
+    <Property Name="Telefono_1" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="Telefono_2" Type="char" MaxLength="10" />
+    <Property Name="Telefono_3" Type="char" MaxLength="10" />
+    <Property Name="Telefono_4" Type="char" MaxLength="10" />
+    <Property Name="Telefono_5" Type="char" MaxLength="10" />
+    <Property Name="WhatsAPP" Type="bit" Nullable="false" />
+    <Property Name="DireccionCorta" Type="varchar" MaxLength="255" />
+    <Property Name="Dir_Estado" Type="varchar" MaxLength="30" />
+    <Property Name="Dir_MuniDele" Type="varchar" MaxLength="30" />
+    <Property Name="Dir_Colonia" Type="varchar" MaxLength="30" />
+    <Property Name="Dir_Calle" Type="varchar" MaxLength="30" />
+    <Property Name="Dir_NoInt" Type="varchar" MaxLength="10" />
+    <Property Name="Dir_NoExt" Type="varchar" MaxLength="10" />
+    <Property Name="Dir_CP" Type="varchar" MaxLength="10" />
+    <Property Name="Facebook" Type="varchar" MaxLength="100" />
+    <Property Name="Instagram" Type="varchar" MaxLength="100" />
+    <Property Name="LinkedIn" Type="varchar" MaxLength="100" />
+    <Property Name="Twitter" Type="varchar" MaxLength="100" />
+    <Property Name="Youtube" Type="varchar" MaxLength="100" />
+    <Property Name="Dominio" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AgenteSLandingP">
+    <Key>
+      <PropertyRef Name="ID_Agente" />
+      <PropertyRef Name="ID_Page" />
+    </Key>
+    <Property Name="ID_Agente" Type="int" Nullable="false" />
+    <Property Name="ID_Page" Type="int" Nullable="false" />
+    <Property Name="Dominio_Page" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="ID_Cliente" />
+    </Key>
+    <Property Name="ID_Cliente" Type="int" Nullable="false" />
+    <Property Name="Nombre_Cliente" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Apellido_Cliente" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Edad_Cliente" Type="int" Nullable="false" />
+    <Property Name="Codigo_Postal" Type="int" />
+    <Property Name="Correo_Electronico" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Telefono_Celular" Type="char" MaxLength="10" />
+    <Property Name="Sexo_Cliente" Type="int" />
+  </EntityType>
+  <EntityType Name="ClienteSeguro">
+    <Key>
+      <PropertyRef Name="ID_Cliente" />
+      <PropertyRef Name="Tipo_Seguro" />
+    </Key>
+    <Property Name="ID_Cliente" Type="int" Nullable="false" />
+    <Property Name="Tipo_Seguro" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DatoRequerido">
+    <Key>
+      <PropertyRef Name="ID_Dato" />
+    </Key>
+    <Property Name="ID_Dato" Type="int" Nullable="false" />
+    <Property Name="Descripcion_Dato" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LandingPage">
+    <Key>
+      <PropertyRef Name="ID_Page" />
+    </Key>
+    <Property Name="ID_Page" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Dominio_Page" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Plantilla" Type="int" Nullable="false" />
+    <Property Name="Color" Type="int" Nullable="false" />
+    <Property Name="Imagen" Type="int" Nullable="false" />
+    <Property Name="Titulo_Profesional" Type="varchar" MaxLength="100" />
+    <Property Name="Mensaje_1" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="Mensaje_2" Type="varchar" MaxLength="120" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Seguro">
+    <Key>
+      <PropertyRef Name="Tipo_Seguro" />
+    </Key>
+    <Property Name="Tipo_Seguro" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ID_Seguro" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SeguroDatoRequerido">
+    <Key>
+      <PropertyRef Name="Tipo_Seguro" />
+      <PropertyRef Name="ID_Dato" />
+    </Key>
+    <Property Name="Tipo_Seguro" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="ID_Dato" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__AgenteSLa__ID_Ag__3B40CD36">
+    <End Role="AgenteSeguros" Type="Self.AgenteSeguros" Multiplicity="1" />
+    <End Role="AgenteSLandingP" Type="Self.AgenteSLandingP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgenteSeguros">
+        <PropertyRef Name="ID_Agente" />
+      </Principal>
+      <Dependent Role="AgenteSLandingP">
+        <PropertyRef Name="ID_Agente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AgenteSLa__ID_Pa__40058253">
+    <End Role="LandingPage" Type="Self.LandingPage" Multiplicity="1" />
+    <End Role="AgenteSLandingP" Type="Self.AgenteSLandingP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LandingPage">
+        <PropertyRef Name="ID_Page" />
+      </Principal>
+      <Dependent Role="AgenteSLandingP">
+        <PropertyRef Name="ID_Page" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKAgenteS">
+    <End Role="AgenteSeguros" Type="Self.AgenteSeguros" Multiplicity="1" />
+    <End Role="AgenteSCliente" Type="Self.AgenteSCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AgenteSeguros">
+        <PropertyRef Name="ID_Agente" />
+      </Principal>
+      <Dependent Role="AgenteSCliente">
+        <PropertyRef Name="ID_Agente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKCliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="ClienteSeguro" Type="Self.ClienteSeguro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="ClienteSeguro">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKClienteS">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="AgenteSCliente" Type="Self.AgenteSCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Principal>
+      <Dependent Role="AgenteSCliente">
+        <PropertyRef Name="ID_Cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKIDDato">
+    <End Role="DatoRequerido" Type="Self.DatoRequerido" Multiplicity="1" />
+    <End Role="SeguroDatoRequerido" Type="Self.SeguroDatoRequerido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DatoRequerido">
+        <PropertyRef Name="ID_Dato" />
+      </Principal>
+      <Dependent Role="SeguroDatoRequerido">
+        <PropertyRef Name="ID_Dato" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKSeguro">
+    <End Role="Seguro" Type="Self.Seguro" Multiplicity="1" />
+    <End Role="ClienteSeguro" Type="Self.ClienteSeguro" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seguro">
+        <PropertyRef Name="Tipo_Seguro" />
+      </Principal>
+      <Dependent Role="ClienteSeguro">
+        <PropertyRef Name="Tipo_Seguro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKTipoSeguro">
+    <End Role="Seguro" Type="Self.Seguro" Multiplicity="1" />
+    <End Role="SeguroDatoRequerido" Type="Self.SeguroDatoRequerido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Seguro">
+        <PropertyRef Name="Tipo_Seguro" />
+      </Principal>
+      <Dependent Role="SeguroDatoRequerido">
+        <PropertyRef Name="Tipo_Seguro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UkuviTecModelStoreContainer">
+    <EntitySet Name="AgenteSCliente" EntityType="Self.AgenteSCliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AgenteSeguros" EntityType="Self.AgenteSeguros" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AgenteSLandingP" EntityType="Self.AgenteSLandingP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ClienteSeguro" EntityType="Self.ClienteSeguro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DatoRequerido" EntityType="Self.DatoRequerido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LandingPage" EntityType="Self.LandingPage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Seguro" EntityType="Self.Seguro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SeguroDatoRequerido" EntityType="Self.SeguroDatoRequerido" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__AgenteSLa__ID_Ag__3B40CD36" Association="Self.FK__AgenteSLa__ID_Ag__3B40CD36">
+      <End Role="AgenteSeguros" EntitySet="AgenteSeguros" />
+      <End Role="AgenteSLandingP" EntitySet="AgenteSLandingP" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AgenteSLa__ID_Pa__40058253" Association="Self.FK__AgenteSLa__ID_Pa__40058253">
+      <End Role="LandingPage" EntitySet="LandingPage" />
+      <End Role="AgenteSLandingP" EntitySet="AgenteSLandingP" />
+    </AssociationSet>
+    <AssociationSet Name="FKAgenteS" Association="Self.FKAgenteS">
+      <End Role="AgenteSeguros" EntitySet="AgenteSeguros" />
+      <End Role="AgenteSCliente" EntitySet="AgenteSCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FKCliente" Association="Self.FKCliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="ClienteSeguro" EntitySet="ClienteSeguro" />
+    </AssociationSet>
+    <AssociationSet Name="FKClienteS" Association="Self.FKClienteS">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="AgenteSCliente" EntitySet="AgenteSCliente" />
+    </AssociationSet>
+    <AssociationSet Name="FKIDDato" Association="Self.FKIDDato">
+      <End Role="DatoRequerido" EntitySet="DatoRequerido" />
+      <End Role="SeguroDatoRequerido" EntitySet="SeguroDatoRequerido" />
+    </AssociationSet>
+    <AssociationSet Name="FKSeguro" Association="Self.FKSeguro">
+      <End Role="Seguro" EntitySet="Seguro" />
+      <End Role="ClienteSeguro" EntitySet="ClienteSeguro" />
+    </AssociationSet>
+    <AssociationSet Name="FKTipoSeguro" Association="Self.FKTipoSeguro">
+      <End Role="Seguro" EntitySet="Seguro" />
+      <End Role="SeguroDatoRequerido" EntitySet="SeguroDatoRequerido" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,1511 @@
+﻿
+
+<div id="preloadScreen"></div>
+<!--Navbar-->
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+        <img src="../Content/img/logo-agente-top.svg" alt="Logo de agente top" width="118" height="40"
+             class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link align-top" href="#">Tableros</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle align-top" href="#" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contactos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle align-top" href="#" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Marketing
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle align-top" href="#" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tareas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle align-top" href="#" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cotizadores
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle align-top" href="#" id="navbarDropdownMenuLink"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Nombre Agente
+                    <img class="rounded-circle float-right mx-2 align-top" src="../Content/imagen-prueba/harold.png"
+                         alt="Imagen del Agente" width="42" height="42">
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Sign Out</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Navbar-->
+
+<div class="d-flex flex-row">
+    <!--Sidenav-->
+    <div class="d-flex flex-column position-fixed">
+        <div id="sidebar-container" class="bg-light">
+            <div class="logo d-flex">
+                <p>Landing page</p>
+            </div>
+
+            <div class="side-element d-flex flex-row " nav-id="1" activo="1" id="dominio">
+
+                <div class="mr-auto">
+                    <p class="text-format m-0">Dominio </p>
+                </div>
+
+                <div class="h-100 d-flex align-items-center">
+                    <i class="material-icons chev-con">chevron_right</i>
+                </div>
+
+            </div>
+
+            <div class="side-element d-flex flex-row" nav-id="2" activo="0" id="plantilla">
+                <div class="mr-auto">
+                    <p class="text-format m-0">Plantilla</p>
+                </div>
+
+                <div class="h-100 d-flex align-items-center">
+                    <i class="material-icons chev-con">chevron_right</i>
+                </div>
+
+            </div>
+
+            <div class="side-element d-flex flex-row " nav-id="3" activo="0" id="personalizar">
+                <div class="mr-auto">
+                    <p class="text-format m-0">Personalizar diseño</p>
+                </div>
+
+            </div>
+            <div id="secnav">
+                <div class="secElement d-flex flex-row " per-at="1">
+                    <div class="mr-auto d-flex align-items-center justify-content-center">
+                        <p class="pnavText">Presentacion</p>
+                    </div>
+
+                    <div class="h-100 d-flex align-items-center">
+                        <i class="material-icons iconpnav">chevron_right</i>
+                    </div>
+                </div>
+                <div class="secElement d-flex flex-row " per-at="2">
+                    <div class="mr-auto d-flex align-items-center">
+                        <p class="pnavText">Ramos</p>
+                    </div>
+
+                    <div class="h-100 d-flex align-items-center">
+                        <i class="material-icons iconpnav">chevron_right</i>
+                    </div>
+                </div>
+                <div class="secElement d-flex flex-row " per-at="3">
+                    <div class="mr-auto d-flex align-items-center">
+                        <p class="pnavText">Aseguradoras</p>
+                    </div>
+
+                    <div class="h-100 d-flex align-items-center">
+                        <i class="material-icons iconpnav">chevron_right</i>
+                    </div>
+                </div>
+                <div class="secElement d-flex flex-row " per-at="4">
+                    <div class="mr-auto d-flex align-items-center">
+                        <p class="pnavText ">Contacto</p>
+                    </div>
+
+                    <div class="h-100 d-flex align-items-center">
+                        <i class="material-icons iconpnav">chevron_right</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-element d-flex flex-row " nav-id="4" id="publicar">
+
+                <div class="mr-auto">
+                    <p class="text-format m-0">Publicación</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Sidenav-->
+    <!--Contenido-->
+
+    <div id="page-content" class="d-flex flex-column w-100">
+        <div class="d-flex flex-row justify-content-center" id="place-holder">
+            <div class="d-flex flex-column " style="align-content: center;">
+
+                <div class="d-flex justify-content-center">
+                    <p class="title-t">Configura tu Landing Page</p>
+                </div>
+                <div class="d-flex justify-content-center" id="pc-text">
+                    <p>Vamos a configurar tu página especializada para&nbsp</p>
+                    <p>Seguros</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="d-flex flex-row">
+
+
+            <!--Configuracion de dominio-->
+            <div class="cont-element" nav-id="1">
+                <div class="d-flex flex-row ">
+                    <p class="title-t m-0 px-5 pt-5 pb-2">Configuración de dominio</p>
+                </div>
+
+                <div class="d-flex flex-row p-4 b-t overflow-auto">
+                    <div class="d-flex flex-column m-0 p-4">
+                        <div class="d-flex flex-row">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="butt-dom buttNeDom " style="text-align: center;">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 20px; padding-top: 20px;">Necesito un dominio</p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="butt-dom buttYaDom" style="text-align: center;">
+                                    <p style="font-family: 'Source Sans Pro', sans-serif; font-size: 20px; padding-top: 20px;">Ya tengo dominio</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row ">
+                            <div class="nDom" id="nDom">
+                                <div class="d-flex flex-row m-0 py-5">
+                                    <p class="flex-column d-flex fnt" style="font-family: 'Source Sans Pro', sans-serif; color: #4E455C;">Introduce un nombre para tu dominio</p>
+                                </div>
+                                <div class="d-flex flex-row m-0 py-2">
+                                    <div class="d-flex flex-column ">
+                                        <input class="nomDom pl-2" type="text" name="domNombre" placeholder="Dominio" id="domNombre" autocomplete="false">
+                                        <div id="domname">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex flex-column py-2 px-2">
+                                        <p class="font-weight-bold m-0" style="font-family: 'Source Sans Pro', sans-serif;  font-size: 20px; color: #4E455C;">.saltodigital.mx</p>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex flex-row py-5">
+                                    <div class="d-flex flex-row confDom py-2 align-items-center justify-content-center">Confirmar dominio</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <div class="yDom" id="yDom">
+
+                                <p class="d-flex flex-row m-0 py-5 fnt align-items-center" style="font-family: 'Source Sans Pro', sans-serif;">
+                                    Contacta a uno de nuestros asistentes para poder
+                                    ayudarte a configurar tu dominio
+                                </p>
+                                <div class="d-flex flex-row asistencia align-items-center justify-content-center" data-toggle="modal" data-target="#ayuda">Solicitar asistencia</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Configuracion de dominio-->
+            <!--Seleccion de plantilla y color-->
+            <div class="cont-element" nav-id="2">
+                <div class="d-flex flex-row">
+                    <p class="title-t m-0 px-5 pt-5 pb-2">Elige la plantilla ideal para ti</p>
+                </div>
+
+                <div class="d-flex flex-row p-4 b-t overflow-auto">
+
+                    <div class="d-flex flex-column p-4">
+
+                        <div class="p-3 bg-light rounded shadow-lg selected prev" style="width: 260px; height: auto"
+                             id-template="1">
+                            <img class="card-img-top" src="../Content/img/thumbnail11.png" alt="preview template" id-template="1">
+                            <div class="card-body d-flex justify-content-center">
+                                <div class="d-flex flex-row ">
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center cSelected" id-template="1" color-template="1">
+                                        <img src="../Content/Icons/plantilla1Color1.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="1" color-template="2">
+                                        <img src="../Content/Icons/plantilla1Color2.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="1" color-template="3">
+                                        <img src="../Content/Icons/plantilla1Color3.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-center selectors">
+
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="ver-bot d-flex flex-row align-items-center justify-content-center" data-toggle="modal" data-target="#preview1">
+                                    <i class="material-icons mb-2 m-0" style="padding-bottom: 4px;">visibility</i>
+                                    <p>ver</p>
+                                </div>
+                                <div class="plantilla bot-select viewing " id-template="1">
+                                    <p class="align-baseline">Seleccionado</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Preview 1-->
+                    <div class="modal fade" id="preview1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content align-items-center" style="width: 800px; background-color: #4E455C;">
+                                <div class="modal-header headprev d-flex flex-row justify-content-center" style="background-color: #FFFFFF; width: 800px; align-items: center;">
+                                    <div class="d-flex flex-column col-8" style="padding-left: 285px;">
+                                        <div class="btprev d-flex flex-row justify-content-center py-1 m-0" id-template="1" data-dismiss="modal">
+                                            <div class="d-flex flex-column py-1 px-3">
+                                                <p class="m-0">Usar esta Plantilla</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column col-4 p-3 px-3 align-left">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            Cerrar
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body justify-content-center bodyprev" style="background-color: #4E455C; align-items: center;" id-template="1">
+                                    <img src="../Content/img/preview11.png" alt="preview template" width="720" height="842">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Preview 1-->
+
+                    <div class="d-flex flex-column p-4 ">
+                        <div class=" p-3 bg-light rounded shadow-lg prev" style="width: 260px; height: auto;"
+                             id-template="2">
+                            <img class="card-img-top" src="../Content/img/thumbnail21.png" alt="preview template" id-template="2">
+                            <div class="card-body d-flex justify-content-center">
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="2" color-template="1">
+                                        <img src="../Content/Icons/plantilla2Color1.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="2" color-template="2">
+                                        <img src="../Content/Icons/plantilla2Color2.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="2" color-template="3">
+                                        <img src="../Content/Icons/plantilla2Color3.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row justify-content-center selectors">
+
+                            <div class="d-flex align-items-center">
+                                <div class="ver-bot d-flex flex-row align-items-center justify-content-center" data-toggle="modal" data-target="#preview2">
+                                    <i class="material-icons mb-2 m-0" style="padding-bottom: 4px;">visibility</i>
+                                    <p>ver</p>
+                                </div>
+                                <div class="plantilla bot-select" id-template="2">
+                                    <p>Seleccionar</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Preview 2-->
+                    <div class="modal fade" id="preview2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content align-items-center" style="width: 800px; background-color: #4E455C;">
+                                <div class="modal-header headprev d-flex flex-row justify-content-center" style="background-color: #FFFFFF; width: 800px; align-items: center;">
+                                    <div class="d-flex flex-column col-8" style="padding-left: 285px;">
+                                        <div class="btprev d-flex flex-row justify-content-center py-1 m-0" id-template="2" data-dismiss="modal">
+                                            <div class="d-flex flex-column py-1 px-3">
+                                                <p class="m-0">Usar esta Plantilla</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column col-4 p-3 px-3 align-left">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            Cerrar
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body justify-content-center bodyprev" style="background-color: #4E455C; align-items: center;" id-template="2">
+                                    <img src="../Content/img/preview21.png" alt="preview template" width="720" height="842">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Preview 2-->
+
+                    <div class="d-flex flex-column p-4">
+                        <div class="p-3 bg-light rounded shadow-lg prev" style="width: 260px; height: auto;"
+                             id-template="3">
+                            <img class="card-img-top" src="../Content/img/thumbnail31.png" alt="preview template" id-template="3">
+                            <div class="card-body d-flex justify-content-center">
+                                <div class="d-flex flex-row ">
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="3" color-template="1">
+                                        <img src="../Content/Icons/plantilla3Color1.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="3" color-template="2">
+                                        <img src="../Content/Icons/plantilla3Color2.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                    <div class="d-flex flex-column p-1 colorSelect align-items-center" id-template="3" color-template="3">
+                                        <img src="../Content/Icons/plantilla3Color3.svg" alt="preview template" width="40" height="28">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex flex-row justify-content-center selectors">
+
+                            <div class="d-flex align-items-center">
+                                <div class="ver-bot d-flex flex-row align-items-center justify-content-center" data-toggle="modal" data-target="#preview3">
+                                    <i class="material-icons mb-2 m-0" style="padding-bottom: 4px;">visibility</i>
+                                    <p>ver</p>
+                                </div>
+                                <div class="plantilla bot-select" id-template="3">
+                                    <p>Seleccionar</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="preview3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content align-items-center" style="width: 800px; background-color: #4E455C;">
+                                <div class="modal-header headprev d-flex flex-row justify-content-center" style="background-color: #FFFFFF; width: 800px; align-items: center;">
+                                    <div class="d-flex flex-column col-8" style="padding-left: 285px;">
+                                        <div class="btprev d-flex flex-row justify-content-center py-1 m-0" id-template="3" data-dismiss="modal">
+                                            <div class="d-flex flex-column py-1 px-3">
+                                                <p class="m-0">Usar esta Plantilla</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-column col-4 p-3 px-3 align-left">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            Cerrar
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body justify-content-center bodyprev" style="background-color: #4E455C; align-items: center;" id-template="3">
+                                    <img src="../Content/img/preview31.png" alt="preview template" width="720" height="842">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-row p-cb px-5 py-1">
+
+                    <div class="d-flex flex-column p-3 ">
+
+                        <div class="gcPlant guardarPlant py-1">
+                            <p style="padding-top: 10px;">Guardar Cambios</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="d-flex flex-column p-3">
+
+                        <div class="ccPlant ">
+                            <p> Cancelar</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--Seleccion de plantilla y color-->
+            <!--Personalizar diseño-->
+            <div class="cont-element" nav-id="3" style="margin-bottom: 40px;">
+                <div class="d-flex flex-row py-1">
+                    <p class="title-t px-5 pt-5 pb-2">Personaliza tu diseño como más te guste</p>
+                </div>
+                <!--Presentacion-->
+                <div class="d-flex flex-row px-5" id="per-at1">
+                    <div class="d-flex flex-column cardTitle justify-content-center">
+                        <div class="d-flex flex-row align-items-center px-2">
+                            <i class="m-0 material-icons iconPerso ddpb" style="font-size: 40px;" per-at="1" act="off">expand_more</i>
+                            <p class="title-t m-0">Presentacion</p><br><br>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p class="secText">Selecciona tu imagen y titulo personal que acompaña a tu nombre</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row px-5 drop" per-at="1">
+                    <div class="d-flex flex-column cardCont">
+                        <div class="d-flex flex-row">
+                            <div class="d-flex flex-column px-3 py-3">
+                                <div class="d-flex flex-row">
+                                    <p class="px-2 secText justify-content-center">La foto y el logo se modifican desde <a href="#">tu perfil<i class="material-icons m-0" style="font-size: 18px;">launch</i></a></p>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex flex-column px-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="foto-logo" id="foto-agent" value="foto" checked>
+                                                <label class="form-check-label" for="foto-agent">
+                                                    <a class="presU presUB" id="text-fa">
+                                                        Usar foto personal
+                                                    </a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row px-4 py-1">
+                                            <img class="rounded-circle " src="../Content/imagen-prueba/harold.png" alt="Imagen del Agente" width="40" height="40">
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex flex-column px-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="foto-logo" id="logo-agent" value="logo">
+                                                <label class="form-check-label" for="logo-agent">
+                                                    <a class="presU" id="text-la">
+                                                        Usar logo
+                                                    </a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row px-4 py-1">
+                                            <img class="rounded-circle " src="../Content/imagen-prueba/logo.jpg" alt="Imagen del Agente" width="40" height="40">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row" style="padding-top: 40px;">
+                                    <div class="d-flex flex-column px-2">
+                                        <div class="d-flex flex-row">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="titulo-personal">
+                                                <label class="form-check-label" for="titulo-personal">
+                                                    <a style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px; font-weight: bold;">
+                                                        Mostrar titulo personal
+                                                    </a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row py-2">
+                                            <div class="d-flex flex-column">
+                                                <div class="input-group " style="width: 380px;">
+                                                    <input type="text" class="form-control" placeholder='ej. "Agente de Seguros"' aria-label="Username" aria-describedby="basic-addon1" id="titulo-input" maxlength="40">
+                                                </div>
+                                                <p class="rtex">40 caracteres</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-column p-4 align-items-center">
+                                <div class="presprev">
+                                    <div class="d-flex flex-row">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex flex-row align-items-center py-5" style="padding-left: 50px;" id="foto-agente">
+                                                <img class="rounded-circle " src="../Content/imagen-prueba/harold.png" alt="Imagen del Agente" width="60" height="60">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column " style="padding-top: 15px; ">
+                                            <div class="d-flex flex-row px-3">
+                                                <p style=" font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px;  color: #9D98A4;">Vista previa</p>
+                                            </div>
+                                            <div class="d-flex flex-row px-3">
+                                                <a class="title-t ">Juan Agente </a>
+                                            </div>
+                                            <div class="d-flex flex-row px-3">
+                                                <p style=" font-family: 'Fira Sans', sans-serif; font-size: 18px; color: #8A98A9; font-weight: 400;">Agente de seguros</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Presentacion-->
+                <!--Ramos-->
+                <div class="d-flex flex-row px-5" style="padding-top: 20px;" id="per-at2">
+                    <div class="d-flex flex-column cardTitle justify-content-center">
+                        <div class="d-flex flex-row align-items-center px-2">
+                            <i class="m-0 material-icons iconPerso ddpb" style="font-size: 40px;" per-at="2" act="off">expand_more</i>
+                            <p class="title-t m-0">Ramos</p><br><br>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p class="secText">Selecciona los ramos que ofreceras en tu landing page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row px-5 drop" per-at="2">
+
+                    <div class="d-flex flex-column cardCont " style="border-top: white;">
+
+                        <div class="d-flex flex-row py-3 px-3" id="ramos">
+                            <div class="d-flex flex-column px-2">
+
+                                <div class="ramo-add d-flex flex-row align-items-center justify-content-center px-1" data-toggle="modal" data-target="#selecramos">
+                                    <i class="m-0 material-icons" style="font-size: 18px; color: #9D98A4;">add</i>
+                                    <p class="m-0 text-edit">&nbsp;agregar</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="" id="ramos1">
+
+                        </div>
+
+                        <div class="" id="campo-ramos">
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--Ramos-->
+                <!--Aseguradoras-->
+                <div class="d-flex flex-row px-5" style="padding-top: 20px;" id="per-at3">
+                    <div class="d-flex flex-column cardTitle justify-content-center ">
+                        <div class="d-flex flex-row align-items-center px-2">
+                            <i class="m-0 material-icons iconPerso ddpb" style="font-size: 40px;" per-at="3" act="off">expand_more</i>
+                            <p class="title-t m-0">Aseguradoras</p>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p class="secText">Elige los logos de las compañías para las cuales trabajas. Si no lo tenemos, <a href="#">Solicítalo a Soporte </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row px-5 drop" per-at="3">
+                    <div class="d-flex flex-column cardCont">
+                        <div class="d-flex flex-row py-3 px-2" id="insurance">
+                            <div class="d-flex flex-column px-2">
+                                <div class="editarAsegura d-flex flex-row align-items-center justify-content-center" data-toggle="modal" data-target="#selecsegur">
+                                    <i class=" m-0 material-icons" style="font-size: 18px; color: #9D98A4;">create</i>
+                                    <p class="m-0 text-edit">&nbsp;editar</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="" id="insurance1">
+
+                        </div>
+                    </div>
+                </div>
+                <!--Aseguradoras-->
+                <!--Contactos-->
+                <div class="d-flex flex-row px-5" style="padding-top: 20px;" id="per-at4">
+                    <div class="d-flex flex-column cardTitle justify-content-center ">
+                        <div class="d-flex flex-row align-items-center px-2">
+                            <i class="m-0 material-icons iconPerso ddpb" style="font-size: 40px;" per-at="4" act="off">expand_more</i>
+                            <p class="title-t m-0">Contacto</p><br><br>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <p class="secText">Llena la información de contacto que quieras que se muestre en tu landing page.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row px-5 drop" per-at="4">
+                    <div class="d-flex flex-column cardCont">
+                        <div class="d-flex flex-row py-3">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column cardTitle justify-content-center"
+                                     style="height: 50px; width: 815px;">
+                                    <div class="d-flex flex-row align-items-center px-1">
+                                        <i class="m-0 material-icons" style="font-size: 30px; color: #4E455C;">expand_more</i>
+                                        <p class="title-t m-0">Dirección</p><br><br>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column cardCont" style="width: 815px;">
+                                        <div class="d-flex flex-row py-3 px-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="direccion"
+                                                       id="dirCorta" checked>
+                                                <label class="form-check-label" for="dirCorta">
+                                                    <a style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px; font-weight: bold;">
+                                                        Dirección corta
+                                                    </a>
+                                                </label>
+                                                <div class="d-flex flex-row py-2">
+                                                    <div class="input-group mb-3" style="width: 450px;">
+                                                        <input type="text" class="form-control" id="dirc-text"
+                                                               placeholder="Código Postal, Ciudad o Estado"
+                                                               aria-label="DirCorta" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex flex-row py-1 px-2">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="direccion"
+                                                       id="dirExacta" value="dirLarga">
+                                                <label class="form-check-label" for="dirExacta">
+                                                    <a style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px; font-weight: bold;">
+                                                        Dirección exacta
+                                                    </a>
+                                                </label>
+                                                <div class="info-direccion">
+                                                    <div class="d-flex flex-row py-2">
+                                                        <div class="input-group mb-3"
+                                                             style="width: 30%; padding-right: 20px;">
+                                                            <input type="text" class="form-control" placeholder="Calle" id="calle"
+                                                                   aria-label="DirLargaCalle" aria-describedby="basic-addon1" maxlength="30">
+                                                        </div>
+                                                        <div class="input-group mb-3"
+                                                             style="width: 18%; padding-right: 10px;">
+                                                            <input type="number" class="form-control"
+                                                                   placeholder="no. Interior" aria-label="DirLargaNoint" id="nint"
+                                                                   aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3"
+                                                             style="width: 18%; padding-right: 20px;">
+                                                            <input type="number" class="form-control"
+                                                                   placeholder="no. Exterior" aria-label="DirLargaCalle" id="next"
+                                                                   aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3" style="width: 30%;">
+                                                            <input type="number" class="form-control"
+                                                                   placeholder="Código Postal" aria-label="DirLargaCalle" id="cp"
+                                                                   aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex flex-row">
+                                                        <div class="input-group mb-3"
+                                                             style="width: 30%; padding-right: 20px;">
+                                                            <input type="text" class="form-control" placeholder="Colonia" id="colonia" maxlength="30"
+                                                                   aria-label="DirLargaCalle" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3"
+                                                             style="width: 36%; padding-right: 20px;">
+                                                            <input type="text" class="form-control"
+                                                                   placeholder="Municipio/Delegación" id="municipio"
+                                                                   aria-label="Municipio/Delegación" aria-describedby="basic-addon1" maxlength="30">
+                                                        </div>
+                                                        <div class="input-group mb-3" style="width: 30%;">
+                                                            <input type="text" class="form-control" 
+                                                                   placeholder="Estado" aria-label="Estado" id="estado"
+                                                                   aria-describedby="basic-addon1" maxlength="30">
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row py-3">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column cardTitle justify-content-center"
+                                     style="height: 50px;  width: 815px; ">
+                                    <div class="d-flex flex-row align-items-center px-1">
+                                        <i class="m-0 material-icons" style="font-size: 30px; color: #4E455C;">expand_more</i>
+                                        <p class="title-t m-0">Teléfono</p><br><br>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column cardCont" style=" width: 815px;">
+                                        <div class="d-flex flex-column" id="numeros">
+                                            <div class="d-flex flex-row py-3 px-2 numForm" num-id="1">
+                                                <div class="form-check form-check-inline">
+
+                                                    <input type="text" class="form-control" placeholder="10 dígitos" id="num1" maxlength="10"
+                                                           style="margin-right: 30px; width: 150px;">
+
+                                                    <input class="form-check-input" type="radio" name="tel1" id="whats1"
+                                                           value="numero" checked>
+                                                    <label class="form-check-label" for="whats1">
+                                                        <a class="formText">Whatsapp</a>
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="tel1" id="celular1"
+                                                           value="numero" checked>
+                                                    <label class="form-check-label" for="celular1">
+                                                        <a class="formText">Celular</a>
+                                                    </label>
+                                                    <input class="form-check-input" type="radio" name="tel1" id="fijo1"
+                                                           value="numero" checked>
+                                                    <label class="form-check-label" for="fijo1">
+                                                        <a class="formText" style="margin-right: 150px;">Fijo</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row py-3 px-1">
+                                            <div class="addTelefono d-flex flex-row align-items-center justify-content-center px-1">
+                                                <i class="m-0 material-icons" style="font-size: 18px; color: #9D98A4;">add</i>
+                                                <p class="m-0 secText" style="font-size: 18px; padding-left: 0px;">&nbsp;Agregar otro numero</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row py-3">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column cardCont" style="width: 815px;">
+                                    <div class="d-flex flex-row align-items-center px-2">
+                                        <i class="m-0 material-icons" style="font-size: 30px; color: #4E455C;">expand_more</i>
+                                        <p class="title-t m-0">Correo</p><br><br>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row cardCont px-4" style="width: 815px;">
+                                    <div class="d-flex flex-column ">
+                                        <div class="d-flex flex-row py-3 px-1">
+                                            <div class="form-check form-check-inline">
+                                                <label class="switch">
+                                                    <input type="checkbox" id="mail-check">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <a style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px; font-weight: bold; margin-left: 10px; margin-bottom: 8px;"> Mostrar</a>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-row py-3 px-1">
+                                            <div class="d-flex flex-column" id="correos">
+                                                <div class="d-flex flex-row py-1 mail" correo-id="1">
+                                                    <input type="mail" class="form-control" placeholder="agente@correo.mx" correo-id="1" id="mail1" maxlength="100">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex flex-row py-3 px-1">
+
+                                            <div class="addCorreo d-flex flex-row align-items-center justify-content-center px-1">
+                                                <i class="m-0 material-icons" style="font-size: 18px; color: #9D98A4;">add</i>
+                                                <p class="m-0 secText" style="font-size: 18px; padding-left: 0px;">&nbsp;Agregar otro correo</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row py-3">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column cardTitle justify-content-center"
+                                     style="height: 50px; width: 815px;">
+                                    <div class="d-flex flex-row align-items-center px-1">
+                                        <i class="m-0 material-icons" style="font-size: 30px; color: #4E455C;">expand_more</i>
+                                        <p class="title-t m-0">Redes Sociales</p><br><br>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex flex-column cardCont" style=" width: 815px;">
+                                        <div class="d-flex flex-row py-3 px-3">
+
+                                            <p style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 20px; font-weight: bold; margin-left: 10px;">
+                                                Mostrar
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-row py-1 px-2">
+                                            <div class="form-check form-check-inline px-1">
+                                                <label class="switch" style="margin-top: 7px;">
+                                                    <input type="checkbox" id="facebook">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <img src="../Content/Icons/facebook.svg" width="26" height="26" style="margin-left: 23px; margin-right: 13px;">
+                                                <input type="text" class="form-control" placeholder="https//www.facebook.com/juan.agente" id="facebook-text"
+                                                       aria-label="correo1" aria-describedby="basic-addon1" style="width: 627px; margin-right: 10px;" maxlength="100">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="d-flex flex-row py-1 px-2">
+                                            <div class="form-check form-check-inline px-1">
+                                                <label class="switch" style="margin-top: 7px;">
+                                                    <input type="checkbox" id="twitter">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <img src="../Content/Icons/twitter.svg" width="26" height="26" style="margin-left: 23px; margin-right: 13px;">
+                                                <input type="text" class="form-control" placeholder="juan.agente" id="twitter-text"
+                                                       aria-label="correo1" aria-describedby="basic-addon1" style="width: 627px; margin-right: 10px;" maxlength="100">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="d-flex flex-row py-1 px-2">
+                                            <div class="form-check form-check-inline px-1">
+                                                <label class="switch" style="margin-top: 7px;">
+                                                    <input type="checkbox" id="instagram">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <img src="../Content/Icons/instagram.svg" width="26" height="26" style="margin-left: 23px; margin-right: 13px;">
+                                                <input type="text" class="form-control" placeholder="juan.agente" id="instagram-text"
+                                                       aria-label="correo1" aria-describedby="basic-addon1" style="width: 627px; margin-right: 10px;" maxlength="100">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="d-flex flex-row py-1 px-2">
+                                            <div class="form-check form-check-inline px-1">
+                                                <label class="switch" style="margin-top: 7px;">
+                                                    <input type="checkbox" id="youtube">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <img src="../Content/Icons/youtube.svg" width="26" height="26" style="margin-left: 23px; margin-right: 13px;">
+                                                <input type="text" class="form-control" placeholder="Pega la url del perfil o escribe el nombre de usuario" id="youtube-text"
+                                                       aria-label="correo1" aria-describedby="basic-addon1" style="width: 627px; margin-right: 10px;" maxlength="100">
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="d-flex flex-row py-1 px-2" style="margin-bottom: 10px;">
+                                            <div class="form-check form-check-inline px-1">
+                                                <label class="switch" style="margin-top: 7px;">
+                                                    <input type="checkbox" id="linkedin">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <img src="../Content/Icons/linkedin.svg" width="26" height="26" style="margin-left: 23px; margin-right: 13px;">
+                                                <input type="text" class="form-control" placeholder="Pega la url del perfil o escribe el nombre de usuario" id="linkedin-text"
+                                                       aria-label="correo1" aria-describedby="basic-addon1" style="width: 627px; margin-right: 10px;" maxlength="100">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Contactos-->
+
+                <div class="footerPer">
+                    <div class="d-flex flex-column ">
+                        <div class="d-flex flex-row px-5">
+                            <div class="gcCambios py-1" style="margin-top: 22px;">
+                                <p style="padding-top: 10px;">Guardar Cambios</p>
+                            </div>
+                            <div class="vbPrevia py-1 d-flex flex-row align-items-center justify-content-center" style=" margin-left: 20px; margin-top: 22px;">
+                                <i class="material-icons mb-2 m-0" style="padding-top: 5px">visibility</i>
+                                <p style="padding-top: 10px; margin-left: 10px;"> Vista Previa</p>
+                            </div>
+                            <a class="bContinuar py-1 d-flex flex-row align-items-center justify-content-center" id="continuar">
+                                ¡Listo, continuar!
+                                <i class="material-icons mb-2 m-0" style="padding-top: 5px">arrow_forward</i>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--Personalizar diseño-->
+            <!--Publicacion-->
+            <div class="cont-element" nav-id="4">
+                <div class="d-flex flex-row">
+                    <p class="title-t m-0 p-5">Se ha publicado tu Landing Page</p>
+                </div>
+
+                <div id="pub">
+
+                </div>
+                <!--Pop up borrar-->
+                <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-color: #FFFFFF;">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex flex-column align-items-center">
+                                    <div class="d-flex flex-row ">
+                                        <i class="material-icons" style="color: #006FFF; font-size: 60px;">delete_forever</i>
+                                    </div>
+                                    <div class="d-flex flex-row align-items-center">
+                                        <p style="font-family: 'Source Sans Pro', sans-serif; color: #4E455C; font-size: 22px;">OJO, Eliminarás permanentemente <br>la página de aterrizaje seleccionada</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer justify-content-center" style="border-color: #FFFFFF;">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div class="d-flex flex-row">
+                                        <div class="d-flex flex-column px-1">
+                                            <div class="killand" data-dismiss="modal">
+                                                <p>Si, eliminar</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-column px-1">
+                                            <div class="keepplant" data-dismiss="modal">
+                                                <p>Conservar</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Pop up borrar-->
+            </div>
+            <!--Publicacion-->
+        </div>
+
+
+    </div>
+    <!--Contenido-->
+</div>
+
+<!--Pop up aseguradoras-->
+<div class="modal fade" id="selecsegur" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content" style="width: 600px;">
+            <div id="selec-ase">
+                <div class="modal-header" style="border-color: #FFFFFF;">
+                    <div class="d-flex flex-column align-items-center justify-content-center" style="padding-left: 45px; text-align: center;">
+                        <p class="material-icons" style="color: #4E455C; font-size: 20px;  font-weight: bold;   font-family: 'Source Sans Pro'; " id="title-ase">
+                            Aseguradoras <a class="title-t m-0" id="totalase">0</a> de 7
+                        </p>
+                        <p class="secText" id="sec-ase">Selecciona los logos de las aseguradoras que quieres mostrar.</p>
+                    </div>
+
+                    <div class="d-flex flex-column ">
+                        <button type="button" class="close py-1" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div id="seleccion-1">
+                        <div class="d-flex flex-column align-items-center" id="seleccion-aseguradoras">
+                            <div class="d-flex flex-row py-1">
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="1">
+                                        <img src="../Content/Icons/aba.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="2">
+                                        <img src="../Content/Icons/afirme.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="3">
+                                        <img src="../Content/Icons/ANA.svg" alt="Imagen seguro" width="50" height="40">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="4">
+                                        <img src="../Content/Icons/argos.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="5">
+                                        <img src="../Content/Icons/atlas.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row py-1">
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="6">
+                                        <img src="../Content/Icons/axa.svg" alt="Imagen seguro" width="40" height="40">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="7">
+                                        <img src="../Content/Icons/bupa.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="8">
+                                        <img src="../Content/Icons/chubb.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="9">
+                                        <img src="../Content/Icons/dentegra.svg" alt="Imagen seguro" width="50" height="40">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="10">
+                                        <img src="../Content/Icons/gbg.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-row py-1">
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="11">
+                                        <img src="../Content/Icons/gmx.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="12">
+                                        <img src="../Content/Icons/gnp.svg" alt="Imagen seguro" width="40" height="40">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="13">
+                                        <img src="../Content/Icons/inbursa.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="14">
+                                        <img src="../Content/Icons/insignia.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="15">
+                                        <img src="../Content/Icons/mapfre.svg" alt="Imagen seguro" width="50" height="40">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-row py-1">
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="16">
+                                        <img src="../Content/Icons/metlife.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="17">
+                                        <img src="../Content/Icons/potosi.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="18">
+                                        <img src="../Content/Icons/prevem.svg" alt="Imagen seguro" width="40" height="40">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="19">
+                                        <img src="../Content/Icons/qualitas.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="20">
+                                        <img src="../Content/Icons/seguros-monterrey.svg" alt="Imagen seguro" width="60" height="60">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row py-1">
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="21">
+                                        <img src="../Content/Icons/sisnova.svg" alt="Imagen seguro" width="50" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="22">
+                                        <img src="../Content/Icons/sura.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="23">
+                                        <img src="../Content/Icons/thona.svg" alt="Imagen seguro" width="60" height="60">
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="24">
+                                        <img src="../Content/Icons/vepormas.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <!--Logo Aseguradoras-->
+                                <div class="d-flex flex-column align-items-center px-1">
+                                    <div class="logoAsegura d-flex flex-row align-items-center justify-content-center" aseguradora-id="25">
+                                        <img src="../Content/Icons/zurich.svg" alt="Imagen seguro" width="60" height="50">
+                                    </div>
+                                </div>
+                                <!--Logo Aseguradoras-->
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer" style="border-color: #FFFFFF;" id="ftrAs">
+                    <div class="d-flex flex-column align-items-center px-4">
+                        <p class="secText">¿El logo que buscas no está? <a href="#">Solicítalo ahora.</a></p>
+                    </div>
+                    <div class="d-flex flex-column px-1">
+                        <div class="cnAsegur">
+                            <div class="d-flex flex-row align-items-center justify-content-center">
+                                <p class="m-0">Continuar &nbsp;</p>
+                                <i class="m-0 material-icons ">arrow_forward</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="asignar">
+                <div class="modal-header" style="border-color: #FFFFFF;">
+                    <div class="d-flex flex-column align-items-center justify-content-center" style="margin-left: 70px; text-align: center;">
+                        <p class="material-icons" style="color: #4E455C; font-size: 20px;  font-weight: bold;   font-family: 'Source Sans Pro'; " id="title-ase">
+                            Asociar Asegurdoras con Ramos
+                        </p>
+                        <p class="secText">Haz click en cada logo para asociarlo a uno o más ramos.</p>
+                    </div>
+
+                    <div class="d-flex flex-column ">
+                        <button type="button" class="close py-1" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-row align-items-center justify-content-center" id="seleccion-2">
+
+                    </div>
+                </div>
+                <div class="modal-footer align-items-center justify-content-center" style="border-color: #FFFFFF;" id="ftrAs">
+                    <div class='d-flex flex-column align-items-center justify-content-center px-1'>
+                        <div class='finAsegur' data-dismiss='modal'>
+                            <div class='d-flex flex-row align-items-center justify-content-center'>
+                                <p class='m-0'>Finalizar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Pop up aseguradoras-->
+<!--Pop up ramos-->
+<div class="modal fade" id="selecramos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="width: 600px;">
+            <div class="modal-header" style="border-color: #FFFFFF;">
+                <div class="d-flex flex-column align-items-center" style="padding-left: 120px; text-align: center;">
+                    <p class="material-icons" style="color: #4E455C; font-size: 20px;  font-weight: bold;   font-family: 'Source Sans Pro'; ">
+                        Ramos <a class="title-t m-0" id="totalara">0</a> de 7
+                    </p>
+                    <p class="secText">Selecciona los ramos que deseas mostrar.</p>
+                </div>
+
+                <div class="d-flex flex-column ">
+                    <button type="button" class="close py-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body" id="ramos-id">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex flex-row py-1">
+                        <div class="d-flex flex-column align-items-center px-1">
+                            <div class="boxramo d-flex flex-row align-items-center justify-content-center" ramo-id="1" nombre-ramo="Vida">
+                                <p class="m-0" style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; color: #9D98A4;">Vida</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center px-1">
+                            <div class="boxramo d-flex flex-row align-items-center justify-content-center" ramo-id="2" nombre-ramo="Dental">
+                                <p class="m-0" style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; color: #9D98A4;">Dental</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center px-1">
+                            <div class="boxramo d-flex flex-row align-items-center justify-content-center" ramo-id="3" nombre-ramo="GMM">
+                                <p class="m-0" style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; color: #9D98A4;">GMM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center px-1">
+                            <div class="boxramo d-flex flex-row align-items-center justify-content-center" ramo-id="4" nombre-ramo="Auto">
+                                <p class="m-0" style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; color: #9D98A4;">Auto</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center px-1">
+                            <div class="boxramo d-flex flex-row align-items-center justify-content-center" ramo-id="5" nombre-ramo="Hogar">
+                                <p class="m-0" style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; color: #9D98A4;">Hogar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row py-1">
+                        <div class="d-flex flex-column align-items-center px-1">
+                            <div class="boxramo d-flex flex-row align-items-center justify-content-center" ramo-id="6" style="width: 125px;" nombre-ramo="Empresa">
+                                <p class="m-0" style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; color: #9D98A4;">Empresariales</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column align-items-center px-1">
+                            <div class="boxramo d-flex flex-row align-items-center justify-content-center" ramo-id="7" style="width: 100px;" nombre-ramo="Grupales">
+                                <p class="m-0" style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; color: #9D98A4;">Grupales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer align-items-center justify-content-center" style="border-color: #FFFFFF;">
+                <div class="d-flex flex-column px-1 align-items-center justify-content-center">
+                    <div class="cnAsegur" data-dismiss="modal">
+                        <div class="d-flex flex-row align-items-center justify-content-center">
+                            <p class="m-0">Confirmar </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Pop up ramos-->
+<!--Pop up ayuda-->
+<div class="modal fade" id="ayuda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-color: #FFFFFF;">
+                <div class="d-flex flex-column align-items-center" style=" text-align: center;">
+
+                    <div class="d-flex flex-row" style="padding-left: 40px;">
+                        <p class="material-icons" style="color: #4E455C; font-size: 20px;  font-weight: bold;   font-family: 'Source Sans Pro', sans-serif; ">
+                            Te ayudamos a configurar tu dominio
+                        </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="secText">Selecciona el medio por el que quieres ser contactado.</p>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column ">
+                    <button type="button" class="close py-1" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex flex-column align-items-center">
+
+                    <div class="d-flex flex-row justify-content-center py-1">
+                        <div class="d-flex flex-column helpSelect justify-content-center helpSelected" help-id="1">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="d-flex flex-column px-1  justify-content-center ">
+                                    <img src="../Content/Icons/whatsapp.svg" alt="Imagen del Agente" width="32" height="32">
+                                </div>
+                                <div class="d-flex flex-column px-1 justify-content-center align-items-center">
+                                    <p class="m-0" style="font-family:'Source Sans Pro'; color: #4E455C; font-size: 16px;">Whatsapp</p>
+                                </div>
+                                <div class="d-flex flex-column w-60 " style="padding-left: 100px;">
+                                    <a style="font-family:'Source Sans Pro'; color: #4E455C; font-size: 16px;">(442)-204-6497</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center py-1">
+                        <div class="d-flex flex-column helpSelect justify-content-center " help-id="3">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="d-flex flex-column px-1  justify-content-center ">
+                                    <i class="material-icons" style="color: #006FFF; font-size: 32px;">perm_phone_msg</i>
+
+                                </div>
+                                <div class="d-flex flex-column px-1 ">
+                                    <p class="m-0" style="font-family:'Source Sans Pro'; color: #4E455C; font-size: 16px;">Llamada telefónica</p>
+                                </div>
+                                <div class="d-flex flex-column " style="padding-left: 40px;">
+                                    <a style="font-family:'Source Sans Pro'; color: #4E455C; font-size: 16px;">(442)-204-6497</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-center py-1">
+                        <div class="d-flex flex-column helpSelect justify-content-center" help-id="3">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="d-flex flex-column px-1  justify-content-center ">
+                                    <i class="material-icons" style="color: #006FFF; font-size: 32px;">mail</i>
+
+                                </div>
+                                <div class="d-flex flex-column px-1 justify-content-center align-items-center">
+                                    <p class="m-0" style="font-family:'Source Sans Pro'; color: #4E455C; font-size: 16px;">Por Correo</p>
+                                </div>
+                                <div class="d-flex flex-column w-60 " style="padding-left: 70px;">
+                                    <a style="font-family:'Source Sans Pro'; color: #4E455C; font-size: 16px;">juan@empresa.mx</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer justify-content-center" style="border-color: #FFFFFF;">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="d-flex flex-row">
+                        <div class="d-flex flex-column px-1">
+                            <div class="gcPlant" data-dismiss="modal">
+                                <p>Contáctenme</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="temp-ramo invisible" id="temp-ramo">
+    <div class="d-flex flex-row justify-content-center cardPad" style="margin-top: 15px;">
+        <div class="d-flex flex-column cardCont " style="width: 95%;">
+            <div class="d-flex flex-row align-items-center px-2">
+                <i class="m-0 material-icons close-ramo" style="font-size: 30px; color: #4E455C;" act="on">expand_less</i>
+                <p class="title-t m-0 titulo-ramo">Autos</p><br><br>
+            </div>
+        </div>
+    </div>
+    <div class="ddramo">
+        <div class="d-flex flex-row justify-content-center " style="padding-bottom: 20px;">
+            <div class="d-flex flex-column cardCont py-1" style="width: 95%; border-top: white;">
+                <div class="d-flex flex-row px-2">
+                    <div class="d-flex flex-column px-2 ">
+                        <div class="d-flex flex-row py-2">
+                            <a style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px; font-weight: bold;">
+                                Mensaje principal
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row py-2">
+                            <div class="input-group m-0 " style="width: 360px;">
+                                <textarea class="form-control mesPrin" placeholder='Aqui tu mensaje principal' rows="3" maxlength="80"></textarea>
+                            </div>
+                        </div>
+                        <p class="rtex">80 caracteres</p>
+                    </div>
+
+                    <div class="d-flex flex-column px-2 ">
+                        <div class="d-flex flex-row py-2">
+                            <a style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px; font-weight: bold;">
+                                Mensaje secundario
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row py-2">
+                            <div class="input-group m-0" style="width: 360px;">
+                                <textarea class="form-control mesSec" placeholder='Aqui tu mensaje secundario' rows="3" maxlength="120"></textarea>
+                            </div>
+                        </div>
+                        <p class="rtex">120 caracteres</p>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row px-2">
+
+                    <div class="d-flex flex-column px-1">
+                        <div class="d-flex flex-row px-1">
+                            <a style=" color: #4E455C; font-family: 'Roboto'Source Sans Pro Regular; font-size: 16px; font-weight: bold;">
+                                Imágenes
+                            </a>
+                        </div>
+                        <div class="d-flex flex-row py-2">
+                            <div class="d-flex flex-column px-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img nombre-ramo="" n-imagen="1" class="imagen selected" src="../Content/img/fotoRamo.png" style="border-radius: 10px;" alt="Imagen del Agente" width="230" height="115">
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-center py-4">
+                                    <div class="ver-bot d-flex flex-row align-items-center justify-content-center" style="height: 44px; width: 90px;" nombre-ramo="">
+                                        <i class="material-icons mb-2 m-0" style="padding-bottom: 4px;">visibility</i>
+                                        <p>ver</p>
+                                    </div>
+                                    <div class=" p-select viewing" n-imagen="1" nombre-ramo="">
+                                        <p class="align-baseline py-2">Elegido</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-column px-2">
+                                <div class="d-flex flex-row align-items-center">
+                                    <img nombre-ramo="" n-imagen="2" class="imagen" src="../Content/img/fotoRamo.png" style="border-radius: 10px;" alt="Imagen del Agente" width="230" height="115">
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-center py-4">
+                                    <div class="ver-bot d-flex flex-row align-items-center justify-content-center" style="height: 44px; width: 90px;" nombre-ramo="">
+                                        <i class="material-icons mb-2 m-0" style="padding-bottom: 4px;">visibility</i>
+                                        <p>ver</p>
+                                    </div>
+                                    <div class="p-select" n-imagen="2" nombre-ramo="">
+                                        <p class="align-center py-2">Elegir</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-column px-2">
+                                <div class="d-flex flex-row align-items-center ">
+                                    <img nombre-ramo="" n-imagen="3" class="imagen" src="../Content/img/fotoRamo.png" style="border-radius: 10px;" alt="Imagen del Agente" width="230" height="115">
+                                </div>
+                                <div class="d-flex flex-row align-items-center justify-content-center py-4">
+                                    <div class="ver-bot d-flex flex-row align-items-center justify-content-center" style="height: 44px; width: 90px;" nombre-ramo="">
+                                        <i class="material-icons mb-2 m-0" style="padding-bottom: 4px;">visibility</i>
+                                        <p>ver</p>
+                                    </div>
+                                    <div class=" p-select " n-imagen="3" nombre-ramo="">
+                                        <p class="align-baseline py-2">Elegir</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<input id='copyfrom' tabindex='-1' aria-hidden='true'>

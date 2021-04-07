@@ -1,0 +1,980 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.outer
+{
+    width: 1400;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+  }
+.rectangle
+{
+    margin-top: 10px;
+   margin-left: 200px;
+    height: 700px;
+    width: 720px;
+    background-color: #FFFFFF;
+    float: left;
+  }
+.rectangleRight
+{
+    position: absolute;
+    top: 42px; left: 1186px;
+    
+    margin-top: 40px;
+    margin-right: 200px;
+    margin-left: 920px;
+    height: 700px;
+    width: 720px;
+    background-color: #FFFFFF;
+}
+
+
+
+
+.dropdown
+{
+    position: absolute;
+    top: 42px; left: 1186px;
+    
+    height: 23px;
+    width: 94px;
+    color: #8A98A9;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+.mas-seguros
+{
+    position: absolute;
+    top: 42px; left: 1149px;
+    
+    height: 23px;
+    width: 94px;
+    color: #8A98A9;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+.mas-seguros-flecha
+{
+    position: absolute;
+    top: 42px; left: 1245px;
+    
+    height: 20px;
+    width: 20px;
+    color: #8A98A9;
+}
+
+
+.img
+{
+    position: absolute;
+    top: 0px; left: 0px;
+    
+    height: 620px;
+    width: 720px;
+}
+
+
+
+.mensaje-1A
+{
+    position: absolute;
+    top: 140px; left: 135px;
+    
+    height: 100px;
+    width: 477px;
+    color: #1D3557;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 50px;
+}
+
+.mensaje-1B
+{
+    position: absolute;
+    top: 191.5px; left: 330px;
+    
+    height: 100px;
+    width: 477px;
+    color: #3B97D1;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 50px;
+}
+
+.mensaje-2
+{
+    position: absolute;
+    top: 260px; left: 135px;
+    
+    height: 66px;
+    width: 444px;
+    color: #1D3557;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 33px;
+}
+
+.logo-agente
+{
+    position: absolute;
+    top: 40px; left: 135px;
+    height: 60px;
+    width: 60px;
+}
+
+.nombre-agente
+{
+    position: absolute;
+    top: 2px; left: 75px;
+    
+    height: 29px;
+    width: 124px;
+    
+    color: #1D3557;
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    
+    letter-spacing: 0;
+    line-height: 29px;
+}
+
+.agente-seguros
+{
+    position: absolute;
+    top: 31px; left: 75px;
+    
+    height: 26px;
+    width: 164px;
+    
+    color: #8A98A9;
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+.solicita-cotizacion
+{
+    position: absolute;
+    top: 39px; left: 638px;
+    
+    height: 31px;
+    width: 330px;
+    
+    color: #1D3557;
+    
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 31px;
+}
+
+.datos-vehiculo
+{
+    position: absolute;
+    top: 89px; left: 639px;
+    
+    height: 20px;
+    width: 144px;
+    
+    color: #3B97D1;
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.input-marca
+{
+    position: absolute;
+    top: 121px; left: 636px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 247px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+    margin-right: 10px;
+}
+
+.input-modelo
+{
+    position: absolute;
+    top: 121px; left: 893px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 247px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+}
+
+.input-version
+{
+    position: absolute;
+    top: 169px; left: 636px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 380px;
+    
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+}
+
+.input-ano
+{
+    position: absolute;
+    top: 169px; left: 1026px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 114px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+}
+
+.transmision-manual
+{
+    position: absolute;
+    top: 217px; left: 636px;
+    
+    box-sizing: border-box;
+    
+    height: 34px;
+    width: 248px;
+    
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    
+    text-align: center;
+    
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+
+    margin-right: 10px;
+}
+
+.transmision-automatica
+{
+    position: absolute;
+    top: 217px; left: 894px;
+    
+    box-sizing: border-box;
+    
+    height: 34px;
+    width: 248px;
+    
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    
+    text-align: center;
+    
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+
+    margin-right: 10px;
+}
+
+.datos-conductor
+{
+    position: absolute;
+    top: 272px; left: 638px;
+    
+    height: 20px;
+    width: 160px;
+    color: #3B97D1;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.input-nombre
+{
+    position: absolute;
+    top: 302px; left: 636px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 247px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+}
+
+.input-apellido
+{
+    position: absolute;
+    top: 302px; left: 893px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 247px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+}
+
+.input-hombre
+{
+    position: absolute;
+    top: 350px; left: 636px;
+    
+    height: 34px;
+    width: 119px;
+    
+    border-radius: 5px;
+    border: 0px;
+    margin-right: 10px;
+    
+    background-color: #DAE5EB;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+}
+
+.input-mujer
+{
+    position: absolute;
+    top: 350px; left: 765px;
+    
+    height: 34px;
+    width: 119px;
+    
+    border-radius: 5px;
+    border: 0px;
+    margin-right: 10px;
+    
+    background-color: #DAE5EB;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+}
+
+.input-edad
+{
+    position: absolute;
+    top: 350px; left: 893px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 119px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+    margin-right: 10px;
+    
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+}
+
+.input-cp
+{
+    position: absolute;
+    top: 350px; left: 1022px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 119px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+    margin-right: 10px;
+    
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+}
+
+.input-correo
+{
+    position: absolute;
+    top: 397px; left: 636px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 249px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+}
+
+.input-celular
+{
+    position: absolute;
+    top: 397px; left: 893px;
+    
+    box-sizing: border-box;
+    height: 34px;
+    width: 249px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F0F7FC;
+}
+
+.terminos-condiciones
+{
+    height: 18px;
+    width: 431px;
+    color: #E63946;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.aviso-privacidad
+{
+    height: 18px;
+    width: 431px;
+    color: #E63946;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.mensaje-aceptar
+{
+    position: absolute;
+    top: 453px; left: 666px;
+    
+    height: 18px;
+    width: 431px;
+    color: #1D3557;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.check-box
+{
+    position: absolute;
+    top: 451px; left: 638px;
+    
+    height: 22px;
+    width: 18px;
+    color: #E63946;
+    font-family: material;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.btn-solicitar
+{
+    position: absolute;
+    top: 495px; left: 633px;
+    
+    height: 44px;
+    width: 235px;
+    border: 0px;
+    border-radius: 29.5px;
+    background-color: #E63946;
+    
+    color: #FFFFFF;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 25px;
+}
+
+.rectangulo-aseguradoras
+{
+    position: absolute;
+    top: 620px; left: 0px;
+    
+    height: 122px;
+    width: 1440px;
+    background-color: #F0F7FC;
+}
+
+.img-1
+{
+    position: absolute;
+    top: 42px; left: 389px;
+    height: 38px;
+    width: 40px;
+}
+
+.img-2
+{
+    position: absolute;
+    top: 51px; left: 479px;
+    height: 20px;
+    width: 122px;
+}
+
+.img-3
+{
+    position: absolute;
+    top: 46px; left: 651px;
+    height: 30px;
+    width: 80px;
+}
+
+.img-4
+{
+    position: absolute;
+    top: 49px; left: 759px;
+    height: 24px;
+    width: 115px;
+}
+
+.img-5
+{
+    position: absolute;
+    top: 42px; left: 932px;
+    height: 38px;
+    width: 120px;
+}
+
+.rectangulo-seguros
+{
+    position: absolute;
+    top: 120px; left: 0px;
+    
+    height: 245px;
+    width: 1440px;
+    background-color: #F2F2F2;
+}
+
+.productos
+{
+    position: absolute;
+    top: 60px; left: 420px;
+    
+    height: 31px;
+    width: 647px;
+    color: #3B97D1;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 31px;
+    text-align: center;
+}
+
+.btn-seguro-1
+{
+    position: absolute;
+    top: 131px; left: 362px;
+    
+    height: 31px;
+    width: 155px;
+    border: 0px;
+    color: #3B97D1;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 31px;
+    text-align: center;
+    
+    height: 54px;
+    width: 225px;
+    border-radius: 27px;
+    background-color: #FFFFFF;
+}
+
+.btn-seguro-2
+{
+    position: absolute;
+    top: 131px; left: 607px;
+    
+    height: 31px;
+    width: 155px;
+    border: 0px;
+    color: #3B97D1;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 31px;
+    text-align: center;
+    
+    height: 54px;
+    width: 225px;
+    border-radius: 27px;
+    background-color: #FFFFFF;
+}
+
+.btn-seguro-3
+{
+    position: absolute;
+    top: 131px; left: 853px;
+    
+    height: 31px;
+    width: 155px;
+    border: 0px;
+    color: #3B97D1;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 31px;
+    text-align: center;
+    
+    height: 54px;
+    width: 225px;
+    border-radius: 27px;
+    background-color: #FFFFFF;
+}
+
+.header-direccion
+{
+    position: absolute;
+    top: 436px; left: 760px;
+    
+    height: 31px;
+    width: 186pxpx;
+    
+    color: #3B97D1;
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 31px;
+}
+
+.direccion
+{
+    position: absolute;
+    top: 480px; left: 760px;
+    height: 46px;
+    width: 407px;
+    color: #8A98A9;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+.nombre-agente1
+{
+    position: absolute;
+    top: 358px; left: 760px;
+    
+    height: 29px;
+    width: 124px;
+    
+    color: #1D3557;
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 600;
+    
+    letter-spacing: 0;
+    line-height: 29px;
+}
+
+.agente-seguros1
+{
+    position: absolute;
+    top: 387px; left: 760px;
+    
+    height: 26px;
+    width: 164px;
+    
+    color: #8A98A9;
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+.whatsapp
+{
+    position: absolute;
+    top: 547px; left: 760px;
+    
+    height: 22px;
+    width: 22px;
+    
+}
+
+.telefono
+{
+    position: absolute;
+    top: 546px; left: 792px;
+    
+    height: 23px;
+    width: 110px;
+    
+    color: #8A98A9;
+    
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+.rectangulo-footer
+{
+    position: absolute;
+    top: 691px; left: 0px;
+    height: 250px;
+    width: 1440px;
+    background-color: #E63946;
+}
+
+.line-footer
+{
+    position: absolute;
+    top: 43px; left: 180px;
+    
+    box-sizing: border-box;
+    height: 1px;
+    width: 1080px;
+    border: 2px solid #F2F2F2;
+    opacity: 0.2;
+}
+
+.seguro-footer a
+{
+    position: absolute;
+    top: 83px; left: 180px;
+    
+    height: 23px;
+    width: 129px;
+    
+    color: #EBEAEC;
+    
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 23px;
+
+}
+
+.seguro1-footer a
+{
+    position: absolute;
+    top: 127px; left: 180px;
+    
+    height: 72px;
+    width: 283px;
+    color: #FAFAFA;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.seguro2-footer a
+{
+    position: absolute;
+    top: 150px; left: 180px;
+    
+    height: 72px;
+    width: 283px;
+    color: #FAFAFA;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.seguro3-footer a
+{
+    position: absolute;
+    top: 173px; left: 180px;
+    
+    height: 72px;
+    width: 283px;
+    color: #EFEFF0;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.salto-digital-footer
+{
+    position: absolute;
+    top: 83px; left: 818px;
+    
+    height: 23px;
+    width: 240px;
+    color: #EFEFF0;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+.privacidad-footer a
+{
+    position: absolute;
+    top:  127px; left: 818px;
+    
+    height: 23px;
+    width: 164px;
+    color: #EFEFF0;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+.terminos-footer a
+{
+    position: absolute;
+    top: 150px; left: 818px;
+    
+    height: 23px;
+    width: 137px;
+    color: #EFEFF0;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+
+.mapouter
+{
+    position: absolute;
+    top: 350px; left: 268px;
+    text-align:right;
+}
+.gmap_canvas
+{
+    overflow:hidden;
+    background:none!important;
+    height: 246px;
+    width: 438px;
+    border-radius: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .inputText{
+    height: 23px;
+    width: 43px;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 23px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nombreAgente
+{
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+}
+
+
+.agente-seguros
+{
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+}
+
+.solicitar
+{   
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+}
+
+
+
+
+
+
+
+
+
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
+
+
+
+
+
+
+583
+
+
+
+
+

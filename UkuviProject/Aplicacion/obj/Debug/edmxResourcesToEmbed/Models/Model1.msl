@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UkuviTecModelStoreContainer" CdmEntityContainer="UkuviTecEntities1">
+    <EntitySetMapping Name="AgenteSeguros">
+      <EntityTypeMapping TypeName="UkuviTecModel.AgenteSeguro">
+        <MappingFragment StoreEntitySet="AgenteSeguros">
+          <ScalarProperty Name="ID_Agente" ColumnName="ID_Agente" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Foto_logo" ColumnName="Foto_logo" />
+          <ScalarProperty Name="CorreoElectronico_1" ColumnName="CorreoElectronico_1" />
+          <ScalarProperty Name="CorreoElectronico_2" ColumnName="CorreoElectronico_2" />
+          <ScalarProperty Name="CorreoElectronico_3" ColumnName="CorreoElectronico_3" />
+          <ScalarProperty Name="Telefono_1" ColumnName="Telefono_1" />
+          <ScalarProperty Name="Telefono_2" ColumnName="Telefono_2" />
+          <ScalarProperty Name="Telefono_3" ColumnName="Telefono_3" />
+          <ScalarProperty Name="Telefono_4" ColumnName="Telefono_4" />
+          <ScalarProperty Name="Telefono_5" ColumnName="Telefono_5" />
+          <ScalarProperty Name="WhatsAPP" ColumnName="WhatsAPP" />
+          <ScalarProperty Name="DireccionCorta" ColumnName="DireccionCorta" />
+          <ScalarProperty Name="Dir_Estado" ColumnName="Dir_Estado" />
+          <ScalarProperty Name="Dir_MuniDele" ColumnName="Dir_MuniDele" />
+          <ScalarProperty Name="Dir_Colonia" ColumnName="Dir_Colonia" />
+          <ScalarProperty Name="Dir_Calle" ColumnName="Dir_Calle" />
+          <ScalarProperty Name="Dir_NoInt" ColumnName="Dir_NoInt" />
+          <ScalarProperty Name="Dir_NoExt" ColumnName="Dir_NoExt" />
+          <ScalarProperty Name="Dir_CP" ColumnName="Dir_CP" />
+          <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+          <ScalarProperty Name="Instagram" ColumnName="Instagram" />
+          <ScalarProperty Name="LinkedIn" ColumnName="LinkedIn" />
+          <ScalarProperty Name="Twitter" ColumnName="Twitter" />
+          <ScalarProperty Name="Youtube" ColumnName="Youtube" />
+          <ScalarProperty Name="Dominio" ColumnName="Dominio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgenteSLandingPs">
+      <EntityTypeMapping TypeName="UkuviTecModel.AgenteSLandingP">
+        <MappingFragment StoreEntitySet="AgenteSLandingP">
+          <ScalarProperty Name="ID_Agente" ColumnName="ID_Agente" />
+          <ScalarProperty Name="ID_Page" ColumnName="ID_Page" />
+          <ScalarProperty Name="Dominio_Page" ColumnName="Dominio_Page" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="UkuviTecModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+          <ScalarProperty Name="Nombre_Cliente" ColumnName="Nombre_Cliente" />
+          <ScalarProperty Name="Apellido_Cliente" ColumnName="Apellido_Cliente" />
+          <ScalarProperty Name="Edad_Cliente" ColumnName="Edad_Cliente" />
+          <ScalarProperty Name="Codigo_Postal" ColumnName="Codigo_Postal" />
+          <ScalarProperty Name="Correo_Electronico" ColumnName="Correo_Electronico" />
+          <ScalarProperty Name="Telefono_Celular" ColumnName="Telefono_Celular" />
+          <ScalarProperty Name="Sexo_Cliente" ColumnName="Sexo_Cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DatoRequeridoes">
+      <EntityTypeMapping TypeName="UkuviTecModel.DatoRequerido">
+        <MappingFragment StoreEntitySet="DatoRequerido">
+          <ScalarProperty Name="ID_Dato" ColumnName="ID_Dato" />
+          <ScalarProperty Name="Descripcion_Dato" ColumnName="Descripcion_Dato" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LandingPages">
+      <EntityTypeMapping TypeName="UkuviTecModel.LandingPage">
+        <MappingFragment StoreEntitySet="LandingPage">
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="ID_Page" ColumnName="ID_Page" />
+          <ScalarProperty Name="Dominio_Page" ColumnName="Dominio_Page" />
+          <ScalarProperty Name="Plantilla" ColumnName="Plantilla" />
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="Titulo_Profesional" ColumnName="Titulo_Profesional" />
+          <ScalarProperty Name="Mensaje_1" ColumnName="Mensaje_1" />
+          <ScalarProperty Name="Mensaje_2" ColumnName="Mensaje_2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seguroes">
+      <EntityTypeMapping TypeName="UkuviTecModel.Seguro">
+        <MappingFragment StoreEntitySet="Seguro">
+          <ScalarProperty Name="Tipo_Seguro" ColumnName="Tipo_Seguro" />
+          <ScalarProperty Name="ID_Seguro" ColumnName="ID_Seguro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AgenteSCliente" TypeName="UkuviTecModel.AgenteSCliente" StoreEntitySet="AgenteSCliente">
+      <EndProperty Name="AgenteSeguros">
+        <ScalarProperty Name="ID_Agente" ColumnName="ID_Agente" />
+      </EndProperty>
+      <EndProperty Name="Cliente">
+        <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ClienteSeguro" TypeName="UkuviTecModel.ClienteSeguro" StoreEntitySet="ClienteSeguro">
+      <EndProperty Name="Cliente">
+        <ScalarProperty Name="ID_Cliente" ColumnName="ID_Cliente" />
+      </EndProperty>
+      <EndProperty Name="Seguro">
+        <ScalarProperty Name="Tipo_Seguro" ColumnName="Tipo_Seguro" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="SeguroDatoRequerido" TypeName="UkuviTecModel.SeguroDatoRequerido" StoreEntitySet="SeguroDatoRequerido">
+      <EndProperty Name="DatoRequerido">
+        <ScalarProperty Name="ID_Dato" ColumnName="ID_Dato" />
+      </EndProperty>
+      <EndProperty Name="Seguro">
+        <ScalarProperty Name="Tipo_Seguro" ColumnName="Tipo_Seguro" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

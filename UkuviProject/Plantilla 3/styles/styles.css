@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.outer {
+    width: 1400;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+  }
+.rectangle {
+    margin-top: 10px;
+   margin-left: 200px;
+    height: 700px;
+    width: 760px;
+    
+    float: left;
+  }
+.rectangleRight{
+    margin-top: 40px;
+    margin-right: 10%;
+    margin-left: 50%;
+    height: 700px;
+    width: 760px;
+    background-color: #FFFFFF;
+    
+
+}
+
+
+.agenteInfo {
+    height: 25px;
+    width: 142px;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 25px;
+    
+  }
+  .nombreAgente {
+    height: 29px;
+    width: 108px;
+    color: #2792FF;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 29px;
+  }
+
+  .email-material {
+    height: 22px;
+    width: 22px;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+
+  .logoAgente{
+    height: 60px;
+    width: 60px;
+  }
+ 
+  .solicitar {
+   
+    color: #445065;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 35px;
+  }
+  .datosVeh {
+  
+    color: #2792FF;
+    font-family: 'Roboto'"Source Sans Pro Regular" !important;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 23px;
+  }
+  .inputMarca {
+    box-sizing: border-box;
+    height: 34px;
+    width: 247px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F6F9FD;
+    margin-right: 10px;
+  }
+  .inputVersion {
+    box-sizing: border-box;
+    height: 34px;
+    width: 380px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F6F9FD;
+    margin-right: 10px;
+    
+  }
+  .inputAño {
+    box-sizing: border-box;
+    height: 34px;
+    width: 114px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F6F9FD;
+    
+  }
+  .inputText{
+    height: 23px;
+    width: 43px;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 23px;
+  }
+  .inputTrans{
+    text-align: center;
+    box-sizing: border-box;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    height: 34px;
+    width: 248px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+
+    margin-right: 10px;
+  }
+
+  .inputSexo{
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    height: 34px;
+    width: 119px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #DAE5EB;
+    margin-right: 10px;
+  }
+  .inputEdyC{
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    box-sizing: border-box;
+    height: 34px;
+    width: 119px;
+    border: 1px solid #EAEFF5;
+    border-radius: 5px;
+    background-color: #F6F9FD;
+    margin-right: 10px;
+  }
+  .terms {
+    height: 20px;
+    width: 480px;
+    color: #000000;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  .btnSolicitar {
+    height: 44px;
+    width: 235px;
+    border-radius: 29.5px;
+    background-color: #2792FF;
+    border: 0px;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+
+  }
+  .otrosSeguros{
+   
+    height: 25px;
+    width: 35px;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 25px;
+    
+  }
+
+  .rightGroup {
+    height: 700px;
+    width: 500px;
+  }
+  
+  .rightMsg {
+    margin-top: 35px;
+    height: 116px;
+    width: 500px;
+    color: #445065;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 58px;
+  }
+  .rightSmlMsg {
+    height: 70px;
+    width: 496px;
+    color: #445065;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 35px;
+  }
+  .bannerAseguradoras{
+    height: 122px;
+    width: 1920px;
+    background-color: #E8EDEF;
+  
+  }
+  .bannerAseguradoras img{
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+  
+  }
+  .rectangleBotLeft {
+    margin-top: 10px;
+   margin-left: 200px;
+    height: 700px;
+    width: 760px;
+    
+   
+  }
+  .rectangleBotRight{
+    margin-top: 10px;
+    margin-left: 200px;
+     height: 500px;
+     width: 760px;
+     
+     float: left;
+  }
+  .dirHeader {
+    margin-top: 200px;
+    margin-left: 100px;
+    height: 35px;
+    width: 200px;
+    color: #2792FF;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 35px;
+  }
+
+  .dirBody {
+    margin-left: 100px;
+    margin-top: 10px;
+    height: 50px;
+    width: 411px;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+  .whatsEmail {
+    margin-top: 10px;
+    height: 25px;
+    width: 200px;
+    margin-left: 92px;
+    color: #8A98A9;
+    font-family: 'Roboto'"Source Sans Pro Regular";
+    font-size: 18px;
+    font-weight: bold;
+   
+    
+  }
+  .footerTop{
+    height: 200px;
+    width: 1920px;
+    background-color:#434546;
+  
+  }
+  .footerTop .p-2{
+    margin-top: 20px;
+  
+  }
+  .footerTop a{
+
+      
+      margin-right: 20px;
+      margin-left: 20px;
+      height: 100px;
+      width: 300px;
+      color: #EBEAEC;
+      font-family: Helvetica;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 19px;
+    
+  
+  }
+  .footerBottom{
+    height: 68px;
+    width: 1920px;
+    background-color:#323435;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 23px;
+    color: #FFFFFF;
+  }
+  
